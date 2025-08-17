@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <link rel="stylesheet" href="selectors.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+            padding: 15px;
+        }
+        tr:nth-child(even) {
+            background-color: lightgrey;
+        }
+        header h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selectors</h1>
+    </header>
+    <main>
+        <section>
+            <table>
+                <tr>
+                    <th>No.</th>
+                    <th>Selector</th>
+                    <th>Description</th>
+                    <th>HTML Example</th>
+                    <th>CSS Example</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><a href="alltags.html#id" target="_blank">ID Selector</a></td>
+                    <td>Selects an element with a specific ID</td>
+                    <td>&lt;div id="myDiv"&gt;Hello&lt;/div&gt;</td>
+                    <td>#myDiv { color: red; }</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="alltags.html#class" target="_blank">Class Selector</a></td>
+                    <td>Selects elements with a specific class</td>
+                    <td>&lt;div class="myClass"&gt;Hello&lt;/div&gt;</td>
+                    <td>.myClass { font-size: 20px; }</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="alltags.html#attribute" target="_blank">Attribute Selector</a></td>
+                    <td>Selects elements with a specific attribute</td>
+                    <td>&lt;input type="text"&gt;</td>
+                    <td>[type="text"] { border: 2px solid blue; }</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="alltags.html#pseudo-class" target="_blank">Pseudo-class Selector</a></td>
+                    <td>Selects elements based on their state or behavior</td>
+                    <td>&lt;a href="#"&gt;Link&lt;/a&gt;</td>
+                    <td>a:hover { color: green; }</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a href="alltags.html#child-combinator" target="_blank">Child Combinator</a></td>
+                    <td>Selects immediate child elements</td>
+                    <td>&lt;div&gt;&lt;p&gt;Hello&lt;/p&gt;&lt;/div&gt;</td>
+                    <td>div &gt; p { color: blue; }</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><a href="alltags.html#descendant-combinator" target="_blank">Descendant Combinator</a></td>
+                    <td>Selects all descendant elements</td>
+                    <td>&lt;div&gt;&lt;span&gt;Hi&lt;/span&gt;&lt;/div&gt;</td>
+                    <td>div span { font-weight: bold; }</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><a href="alltags.html#general-sibling-combinator" target="_blank">General Sibling Combinator</a></td>
+                    <td>Selects all siblings after a given element</td>
+                    <td>&lt;h1&gt;Title&lt;/h1&gt;&lt;p&gt;Para&lt;/p&gt;</td>
+                    <td>h1 ~ p { color: purple; }</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><a href="alltags.html#adjacent-sibling-combinator" target="_blank">Adjacent Sibling Combinator</a></td>
+                    <td>Selects the element immediately after a given element</td>
+                    <td>&lt;h1&gt;Title&lt;/h1&gt;&lt;p&gt;Para&lt;/p&gt;</td>
+                    <td>h1 + p { font-style: italic; }</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><a href="alltags.html#not-combinator" target="_blank">Not Combinator</a></td>
+                    <td>Selects elements that do not match a specific selector</td>
+                    <td>&lt;div&gt;Hello&lt;/div&gt;&lt;p&gt;World&lt;/p&gt;</td>
+                    <td>div:not(.myClass) { background-color: yellow; }</td>
+                </tr>
+           <tr>
+               <td>10</td>
+               <td><a href="alltags.html#nth-child-pseudo-class" target="_blank">nth-child Pseudo-class</a></td>
+               <td>Selects elements based on their position in a parent element</td>
+               <td>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;li&gt;Item 3&lt;/li&gt;&lt;/ul&gt;</td>
+               <td>ul li:nth-child(2) { color: blue; }</td>
+           </tr>
+           <tr>
+            <td>11</td>
+            <td><a href="alltags.html#first-child-pseudo-class" target="_blank">first-child Pseudo-class</a></td>
+            <td>Selects the first child element of a parent element</td>
+            <td>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;li&gt;Item 3&lt;/li&gt;&lt;/ul&gt;</td>
+            <td>ul li:first-child { font-weight: bold; }</td>
+
+           </tr>
+           <tr>
+            <td>12</td>
+            <td><a href="alltags.html#last-child-pseudo-class" target="_blank">last-child Pseudo-class</a></td>
+            <td>Selects the last child element of a parent element</td>
+            <td>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;li&gt;Item 3&lt;/li&gt;&lt;/ul&gt;</td>
+            <td>ul li:last-child { text-decoration: underline; }</td>
+           </tr>
+           <tr>
+            <td>13</td>
+            <td><a href="alltags.html#nth-of-type-pseudo-class" target="_blank">nth-of-type Pseudo-class</a></td>
+            <td>Selects elements based on their position in a parent element</td>
+            <td>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;li&gt;Item 3&lt;/li&gt;&lt;/ul&gt;</td>
+            <td>ul li:nth-of-type(2) { color: green; }</td>
+           </tr>
+           <tr>
+            <td>14</td>
+            <td><a href="alltags.html#first-of-type-pseudo-class" target="_blank">first-of-type Pseudo-class</a></td>
+            <td>Selects the first child element of a parent element</td>
+            <td>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;li&gt;Item 3&lt;/li&gt;&lt;/ul&gt;</td>
+            <td>ul li:first-of-type { font-style: italic; }</td>
+           </tr>
+           <tr>
+            <td>15</td>
+            <td><a href="alltags.html#last-of-type-pseudo-class" target="_blank">last-of-type Pseudo-class</a></td>
+            <td>Selects the last child element of a parent element</td>
+            <td>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;li&gt;Item 3&lt;/li&gt;&lt;/ul&gt;</td>
+            <td>ul li:last-of-type { text-decoration: underline; }</td>
+           </tr>
+           <tr>
+            <td>16</td>
+            <td><a href="alltags.html#only-child-pseudo-class" target="_blank">only-child Pseudo-class</a></td>
+            <td>Selects elements that have no siblings</td>
+            <td>&lt;div&gt;Hello&lt;/div&gt;&lt;p&gt;World&lt;/p&gt;</td>
+            <td>div:only-child { background-color: yellow; }</td>
+           </tr>
+           <tr>
+            <td>17</td>
+            <td><a href="alltags.html#only-of-type-pseudo-class" target="_blank">only-of-type Pseudo-class</a></td>
+            <td>Selects elements that have no siblings</td>
+            <td>&lt;div&gt;Hello&lt;/div&gt;&lt;p&gt;World&lt;/p&gt;</td>
+            <td>div:only-of-type { background-color: yellow; }</td>
+           </tr>
+           <tr>
+            <td>18</td>
+            <td><a href="alltags.html#empty-pseudo-class" target="_blank">empty Pseudo-class</a></td>
+            <td>Selects elements that have no content</td>
+            <td>&lt;div&gt;Hello&lt;/div&gt;&lt;p&gt;World&lt;/p&gt;</td>
+            <td>div:empty { background-color: yellow; }</td>
+           </tr>
+           <tr>
+            <td>19</td>
+            <td><a href="alltags.html#link-pseudo-class" target="_blank">link Pseudo-class</a></td>
+            <td>Selects elements that are links</td>
+            <td>&lt;a href="#"&gt;Link&lt;/a&gt;</td>
+            <td>a:link { color: blue; }</td>
+           </tr>
+           <tr>
+            <td>20</td>
+            <td><a href="alltags.html#visited-pseudo-class" target="_blank">visited Pseudo-class</a></td>
+            <td>Selects elements that have already been visited</td>
+            <td>&lt;a href="#"&gt;Link&lt;/a&gt;</td>
+            <td>a:visited { color: green; }</td>
+           </tr>
+           <tr>
+            <td>21</td>
+            <td><a href="alltags.html#hover-pseudo-class" target="_blank">hover Pseudo-class</a></td>
+            <td>Selects elements when the user hovers over them</td>
+            <td>&lt;a href="#"&gt;Link&lt;/a&gt;</td>
+            <td>a:hover { color: green; }</td>
+           </tr>
+           <tr>
+            <td>22</td>
+            <td><a href="alltags.html#active-pseudo-class" target="_blank">active Pseudo-class</a></td>
+            <td>Selects elements that are currently active</td>
+            <td>&lt;a href="#"&gt;Link&lt;/a&gt;</td>
+            <td>a:active { color: red; }</td>
+           </tr>
+           <tr>
+            <td>23</td>
+            <td><a href="alltags.html#focus-pseudo-class" target="_blank">focus Pseudo-class</a></td>
+            <td>Selects elements that have focus</td>
+            <td>&lt;input type="text"&gt;</td>
+            <td>input:focus { background-color: yellow; }</td>
+           </tr>
+           <tr>
+            <td>24</td>
+            <td><a href="alltags.html#target-pseudo-class" target="_blank">target Pseudo-class</a></td>
+            <td>Selects elements that are the target of a link</td>
+            <td>&lt;a href="#section1"&gt;Section 1&lt;/a&gt;</td>
+            <td>a:target { background-color: yellow; }</td>
+           </tr>
+           
+           <tr>
+            <td>25</td>
+            <td><a href="alltags.html#nth-last-child-pseudo-class" target="_blank">nth-last-child Pseudo-class</a></td>
+            <td>Selects elements based on their position in a parent element</td>
+            <td>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;li&gt;Item 3&lt;/li&gt;&lt;/ul&gt;</td>
+            <td>ul li:nth-last-child(2) { color: green; }</td>
+           </tr>
+                    <tr>
+                        <td>26</td>
+                        <td><a href="alltags.html#nth-last-of-type-pseudo-class" target="_blank">nth-last-of-type Pseudo-class</a></td>
+                        <td>Selects elements based on their position in a parent element</td>
+                        <td>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;li&gt;Item 3&lt;/li&gt;&lt;/ul&gt;</td>
+                        <td>ul li:nth-last-of-type(2) { color: green; }</td>
+                    </tr>
+                    <tr>
+    <td>27</td>
+    <td><a href="alltags.html#group-selector" target="_blank">Group Selector</a></td>
+    <td>Selects multiple elements and applies the same styles to them</td>
+    <td>&lt;h1&gt;Title&lt;/h1&gt; &lt;p&gt;Paragraph&lt;/p&gt;</td>
+    <td>h1, p { color: red; }</td>
+</tr>
+
+<tr>
+    <td>28</td>
+    <td><a href="alltags.html#all-selector" target="_blank">All Selector</a></td>
+    <td>Selects all elements on the page</td>
+    <td>&lt;h1&gt;Title&lt;/h1&gt; &lt;p&gt;Paragraph&lt;/p&gt;</td>
+    <td>* { color: red; }</td>
+</tr>
+
+            </table>
+        </section>
+    </main>
+</body>
+</html>

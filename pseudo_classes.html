@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo_classes</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+            padding: 15px;
+        }
+        tr:nth-child(even) {
+            background-color: #d47777;
+        }
+        header h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Pseudo-classes</h1></header>
+
+    <main>
+        
+      <section class="user_action">
+    <table border="1" cellpadding="8">
+        <tr>
+            <th colspan="5"><h1>User Action Pseudo-classes</h1></th>
+        </tr>
+        <tr>
+            <th>No.</th>
+            <th>Pseudo-class</th>
+            <th>Description</th>
+            <th>Example</th>
+            <th>Output</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td><a href="alltags.html#active" target="_blank">:active</a></td>
+            <td>Matches a link or element that is being clicked or activated.</td>
+            <td>&lt;a href="#"&gt;Active Link&lt;/a&gt;</td>
+            <td><a href="#">Active Link</a></td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td><a href="alltags.html#hover" target="_blank">:hover</a></td>
+            <td>Matches an element when the user hovers over it with a pointer.</td>
+            <td>&lt;a href="#"&gt;Hover Link&lt;/a&gt;</td>
+            <td><a href="#">Hover Link</a></td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td><a href="alltags.html#visited" target="_blank">:visited</a></td>
+            <td>Matches a link that has already been visited by the user.</td>
+            <td>&lt;a href="https://example.com"&gt;Visited Link&lt;/a&gt;</td>
+            <td><a href="https://example.com">Visited Link</a></td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td><a href="alltags.html#focus" target="_blank">:focus</a></td>
+            <td>Matches an element that is currently focused (e.g., a form field).</td>
+            <td>&lt;input type="text" placeholder="Focus me"&gt;</td>
+            <td><input type="text" placeholder="Focus me"></td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td><a href="alltags.html#focus-visible" target="_blank">:focus-visible</a></td>
+            <td>Matches an element that should be visibly focused (keyboard focus).</td>
+            <td>&lt;input type="text" placeholder="Focus-visible"&gt;</td>
+            <td><input type="text" placeholder="Focus-visible"></td>
+        </tr>
+
+        <tr>
+            <td>6</td>
+            <td><a href="alltags.html#focus-within" target="_blank">:focus-within</a></td>
+            <td>Matches an element if it or any of its descendants have focus.</td>
+            <td>&lt;div&gt;&lt;input type="text" placeholder="Inside focus"&gt;&lt;/div&gt;</td>
+            <td><div><input type="text" placeholder="Inside focus"></div></td>
+        </tr>
+
+        <tr>
+            <td>7</td>
+            <td><a href="alltags.html#target" target="_blank">:target</a></td>
+            <td>Matches an element with an ID that matches the URL fragment.</td>
+            <td>&lt;a href="#section1"&gt;Go to Section 1&lt;/a&gt; &lt;div id="section1"&gt;Targeted&lt;/div&gt;</td>
+            <td><a href="#section1">Go to Section 1</a> <div id="section1">Targeted</div></td>
+        </tr>
+
+        <tr>
+            <td>8</td>
+            <td><a href="alltags.html#target-within" target="_blank">:target-within</a></td>
+            <td>Matches an element that contains a targeted element.</td>
+            <td>&lt;section id="main"&gt;&lt;div id="sub"&gt;Inside Target&lt;/div&gt;&lt;/section&gt;</td>
+            <td><section id="main"><div id="sub">Inside Target</div></section></td>
+        </tr>
+
+        <tr>
+            <td>9</td>
+            <td><a href="alltags.html#link" target="_blank">:link</a></td>
+            <td>Matches a link that has not yet been visited.</td>
+            <td>&lt;a href="https://openai.com"&gt;Unvisited Link&lt;/a&gt;</td>
+            <td><a href="https://openai.com">Unvisited Link</a></td>
+        </tr>
+
+        <tr>
+            <td>10</td>
+            <td><a href="alltags.html#any-link" target="_blank">:any-link</a></td>
+            <td>Matches any link (visited or unvisited).</td>
+            <td>&lt;a href="https://example.com"&gt;Any Link&lt;/a&gt;</td>
+            <td><a href="https://example.com">Any Link</a></td>
+        </tr>
+    </table>
+</section>
+
+        <section class="form_event">
+    <table>
+        <tr><th colspan="5"><h1>Form Event Pseudo-classes</h1></th></tr>
+        <tr>
+            <th>No.</th>
+            <th>Pseudo-class</th>
+            <th>Description</th>
+            <th>Example</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><a href="alltags.html#valid" target="_blank">:valid</a></td>
+            <td>Matches an input element whose value is valid according to its validation constraints</td>
+            <td>&lt;input type="email" value="test@example.com" class="valid"&gt;</td>
+            <td><input type="email" value="test@example.com" class="valid"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href="alltags.html#invalid" target="_blank">:invalid</a></td>
+            <td>Matches an input element whose value is invalid</td>
+            <td>&lt;input type="email" value="wrong" class="invalid"&gt;</td>
+            <td><input type="email" value="wrong" class="invalid"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href="alltags.html#required" target="_blank">:required</a></td>
+            <td>Matches any form element with the required attribute</td>
+            <td>&lt;input type="text" required class="required"&gt;</td>
+            <td><input type="text" required class="required"></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a href="alltags.html#optional" target="_blank">:optional</a></td>
+            <td>Matches any form element that is not required</td>
+            <td>&lt;input type="text" class="optional"&gt;</td>
+            <td><input type="text" class="optional"></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a href="alltags.html#enabled" target="_blank">:enabled</a></td>
+            <td>Matches any form element that is enabled and can be interacted with</td>
+            <td>&lt;input type="text" class="enabled"&gt;</td>
+            <td><input type="text" class="enabled"></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><a href="alltags.html#disabled" target="_blank">:disabled</a></td>
+            <td>Matches any form element that is disabled</td>
+            <td>&lt;input type="text" disabled class="disabled"&gt;</td>
+            <td><input type="text" disabled class="disabled"></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><a href="alltags.html#read-only" target="_blank">:read-only</a></td>
+            <td>Matches input elements that cannot be edited by the user</td>
+            <td>&lt;input type="text" readonly class="read-only"&gt;</td>
+            <td><input type="text" readonly class="read-only"></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><a href="alltags.html#read-write" target="_blank">:read-write</a></td>
+            <td>Matches input elements that can be edited by the user</td>
+            <td>&lt;input type="text" class="read-write"&gt;</td>
+            <td><input type="text" class="read-write"></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><a href="alltags.html#autofill" target="_blank">:autofill</a></td>
+            <td>Matches input elements that have been autofilled by the browser</td>
+            <td>&lt;input type="text" class="autofill"&gt;</td>
+            <td><input type="text" class="autofill"></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><a href="alltags.html#checked" target="_blank">:checked</a></td>
+            <td>Matches radio buttons, checkboxes, or option elements that are selected</td>
+            <td>&lt;input type="checkbox" checked class="checked"&gt;</td>
+            <td><input type="checkbox" checked class="checked"></td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td><a href="alltags.html#indeterminate" target="_blank">:indeterminate</a></td>
+            <td>Matches checkboxes or radio buttons in an indeterminate state</td>
+            <td>&lt;input type="checkbox" class="indeterminate"&gt;</td>
+            <td><input type="checkbox" class="indeterminate"></td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td><a href="alltags.html#default" target="_blank">:default</a></td>
+            <td>Matches form elements that are the default selection</td>
+            <td>&lt;input type="radio" checked class="default"&gt;</td>
+            <td><input type="radio" checked class="default"></td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td><a href="alltags.html#placeholder-shown" target="_blank">:placeholder-shown</a></td>
+            <td>Matches input elements that are showing placeholder text</td>
+            <td>&lt;input type="text" placeholder="Enter text" class="placeholder-shown"&gt;</td>
+            <td><input type="text" placeholder="Enter text" class="placeholder-shown"></td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td><a href="alltags.html#in-range" target="_blank">:in-range</a></td>
+            <td>Matches input elements whose values are within the specified range</td>
+            <td>&lt;input type="number" min="1" max="10" value="5" class="in-range"&gt;</td>
+            <td><input type="number" min="1" max="10" value="5" class="in-range"></td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td><a href="alltags.html#out-of-range" target="_blank">:out-of-range</a></td>
+            <td>Matches input elements whose values are outside the specified range</td>
+            <td>&lt;input type="number" min="1" max="10" value="15" class="out-of-range"&gt;</td>
+            <td><input type="number" min="1" max="10" value="15" class="out-of-range"></td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><a href="alltags.html#blank" target="_blank">:blank</a></td>
+            <td>Matches input elements with no value</td>
+            <td>&lt;input type="text" class="blank"&gt;</td>
+            <td><input type="text" class="blank"></td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><a href="alltags.html#defined" target="_blank">:defined</a></td>
+            <td>Matches elements that have been defined (including custom elements)</td>
+            <td>&lt;input type="text" class="defined"&gt;</td>
+            <td><input type="text" class="defined"></td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><a href="alltags.html#user-valid" target="_blank">:user-valid</a></td>
+            <td>Matches input elements where the user has entered a valid value</td>
+            <td>&lt;input type="email" value="test@example.com" class="user-valid"&gt;</td>
+            <td><input type="email" value="test@example.com" class="user-valid"></td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td><a href="alltags.html#user-invalid" target="_blank">:user-invalid</a></td>
+            <td>Matches input elements where the user has entered an invalid value</td>
+            <td>&lt;input type="email" value="wrong" class="user-invalid"&gt;</td>
+            <td><input type="email" value="wrong" class="user-invalid"></td>
+        </tr>
+    </table>
+</section>
+
+
+        <section>
+    <table>
+        <tr><th colspan="5"><h1>Structural Pseudo Classes</h1></th></tr>
+        <tr>
+            <th>No.</th>
+            <th>Pseudo Class</th>
+            <th>Description</th>
+            <th>Example</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><a href="alltags.html#first-child" target="_blank">:first-child</a></td>
+            <td>Selects the first child of its parent</td>
+            <td>&lt;p&gt;First&lt;/p&gt; &lt;p&gt;Second&lt;/p&gt;</td>
+            <td>First</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href="alltags.html#last-child" target="_blank">:last-child</a></td>
+            <td>Selects the last child of its parent</td>
+            <td>&lt;p&gt;First&lt;/p&gt; &lt;p&gt;Last&lt;/p&gt;</td>
+            <td>Last</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href="alltags.html#only-child" target="_blank">:only-child</a></td>
+            <td>Selects an element that is the only child of its parent</td>
+            <td>&lt;div&gt;&lt;p&gt;Only Child&lt;/p&gt;&lt;/div&gt;</td>
+            <td>Only Child</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a href="alltags.html#only-of-type" target="_blank">:only-of-type</a></td>
+            <td>Selects an element that is the only one of its type in its parent</td>
+            <td>&lt;div&gt;&lt;h1&gt;Only Heading&lt;/h1&gt;&lt;p&gt;Text&lt;/p&gt;&lt;/div&gt;</td>
+            <td>Only Heading</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a href="alltags.html#empty" target="_blank">:empty</a></td>
+            <td>Selects elements that have no children (including text nodes)</td>
+            <td>&lt;p&gt;&lt;/p&gt;</td>
+            <td>(empty)</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><a href="alltags.html#root" target="_blank">:root</a></td>
+            <td>Selects the root element of the document (html)</td>
+            <td>&lt;html&gt;...&lt;/html&gt;</td>
+            <td>html</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><a href="alltags.html#scope" target="_blank">:scope</a></td>
+            <td>Represents the element that is the reference point for selectors to match against</td>
+            <td>&lt;div&gt;...&lt;/div&gt;</td>
+            <td>div</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><a href="alltags.html#nth-child(n)" target="_blank">:nth-child(n)</a></td>
+            <td>Selects the nth child of its parent (counting from 1)</td>
+            <td>&lt;li&gt;One&lt;/li&gt; &lt;li&gt;Two&lt;/li&gt;</td>
+            <td>nth item</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><a href="alltags.html#nth-last-child(n)" target="_blank">:nth-last-child(n)</a></td>
+            <td>Selects the nth child from the end</td>
+            <td>&lt;li&gt;One&lt;/li&gt; &lt;li&gt;Two&lt;/li&gt;</td>
+            <td>nth-last item</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><a href="alltags.html#nth-of-type(n)" target="_blank">:nth-of-type(n)</a></td>
+            <td>Selects the nth sibling of the same element type</td>
+            <td>&lt;p&gt;One&lt;/p&gt; &lt;p&gt;Two&lt;/p&gt;</td>
+            <td>nth paragraph</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td><a href="alltags.html#nth-last-of-type(n)" target="_blank">:nth-last-of-type(n)</a></td>
+            <td>Selects the nth sibling of the same type counting from the end</td>
+            <td>&lt;p&gt;One&lt;/p&gt; &lt;p&gt;Two&lt;/p&gt;</td>
+            <td>nth-last paragraph</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td><a href="alltags.html#first-of-type" target="_blank">:first-of-type</a></td>
+            <td>Selects the first sibling of its type</td>
+            <td>&lt;p&gt;First&lt;/p&gt; &lt;p&gt;Second&lt;/p&gt;</td>
+            <td>First paragraph</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td><a href="alltags.html#last-of-type" target="_blank">:last-of-type</a></td>
+            <td>Selects the last sibling of its type</td>
+            <td>&lt;p&gt;First&lt;/p&gt; &lt;p&gt;Last&lt;/p&gt;</td>
+            <td>Last paragraph</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td><a href="alltags.html#first" target="_blank">:first</a></td>
+            <td>Selects the first matched element</td>
+            <td>&lt;li&gt;One&lt;/li&gt; &lt;li&gt;Two&lt;/li&gt;</td>
+            <td>One</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td><a href="alltags.html#last" target="_blank">:last</a></td>
+            <td>Selects the last matched element</td>
+            <td>&lt;li&gt;One&lt;/li&gt; &lt;li&gt;Two&lt;/li&gt;</td>
+            <td>Two</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><a href="alltags.html#fullscreen" target="_blank">:fullscreen</a></td>
+            <td>Matches the element that is currently in full-screen mode</td>
+            <td>&lt;video&gt;&lt;/video&gt;</td>
+            <td>fullscreen video</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><a href="alltags.html#left" target="_blank">:left</a></td>
+            <td>Matches the left page in a paged media</td>
+            <td>@page :left { ... }</td>
+            <td>(printed left page)</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><a href="alltags.html#right" target="_blank">:right</a></td>
+            <td>Matches the right page in a paged media</td>
+            <td>@page :right { ... }</td>
+            <td>(printed right page)</td>
+        </tr>
+    </table>
+</section>
+
+
+     <section class="negation">
+    <table>
+        <tr><th colspan="5"><h1>Negation & Filtering</h1></th></tr>
+        <tr>
+            <th>No.</th>
+            <th>Pseudo_class</th>
+            <th>Description</th>
+            <th>Example</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><a href="alltags.html#not(selector)" target="_blank">:not(selector)</a></td>
+            <td>Selects elements that do <b>not</b> match a given selector.</td>
+            <td>&lt;input type="text" class="not"&gt;</td>
+            <td><input type="text" class="not"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href="alltags.html#not(:first-child)" target="_blank">:not(:first-child)</a></td>
+            <td>Selects elements that are <b>not</b> the first child of their parent.</td>
+            <td>&lt;input type="text" class="not-first-child"&gt;</td>
+            <td><input type="text" class="not-first-child"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href="alltags.html#not(:last-child)" target="_blank">:not(:last-child)</a></td>
+            <td>Selects elements that are <b>not</b> the last child of their parent.</td>
+            <td>&lt;input type="text" class="not-last-child"&gt;</td>
+            <td><input type="text" class="not-last-child"></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a href="alltags.html#not(:only-child)" target="_blank">:not(:only-child)</a></td>
+            <td>Selects elements that are <b>not</b> the only child of their parent.</td>
+            <td>&lt;input type="text" class="not-only-child"&gt;</td>
+            <td><input type="text" class="not-only-child"></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a href="alltags.html#is(selector)" target="_blank">:is(selector)</a></td>
+            <td>Matches elements that match any of the selectors in the list.</td>
+            <td>&lt;input type="text" class="is"&gt;</td>
+            <td><input type="text" class="is"></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><a href="alltags.html#where(selector)" target="_blank">:where(selector)</a></td>
+            <td>Matches elements like <code>:is()</code> but with zero specificity.</td>
+            <td>&lt;input type="text" class="where"&gt;</td>
+            <td><input type="text" class="where"></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><a href="alltags.html#has(selector)" target="_blank">:has(selector)</a></td>
+            <td>Selects elements that contain elements matching the selector.</td>
+            <td>&lt;input type="text" class="has"&gt;</td>
+            <td><input type="text" class="has"></td>
+        </tr>
+    </table>
+</section>
+
+
+        <section class="document"> 
+    <table>
+        <tr><th colspan="5"><h1>Document & Language</h1></th></tr>
+        <tr>
+            <td>1</td>
+            <td><a href="alltags.html#lang(language)" target="_blank">:lang(language)</a></td>
+            <td>Selects elements that match a specific language as defined by the lang attribute.</td>
+            <td>&lt;p lang="en"&gt;Hello&lt;/p&gt;</td>
+            <td><p lang="en">Hello</p></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href="alltags.html#dir(ltr-rtl)" target="_blank">:dir(ltr | rtl)</a></td>
+            <td>Selects elements based on their text direction (left-to-right or right-to-left).</td>
+            <td>&lt;div dir="rtl"&gt;مرحبا&lt;/div&gt;</td>
+            <td><div dir="rtl">مرحبا</div></td>
+        </tr>
+    </table>
+</section>
+
+        </main>
+        </body>
+        </html>

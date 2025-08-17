@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elements</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+            padding: 15px;
+        }
+        tr:nth-child(even) {
+            background-color: yellow;
+        }
+        header h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <header><h1>Pseudo-Elements</h1></header>
+    <main>
+       <section class="pseudo-elements">
+    <table>
+        <tr>
+            <th>S.No.</th>
+            <th>Selector</th>
+            <th>Description</th>
+            <th>Example (HTML)</th>
+            <th>Result (CSS)</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><a href="alltags.html#after" target="_blank">::after</a></td>
+            <td>Inserts content after the content of an element.</td>
+            <td>&lt;p&gt;Hello&lt;/p&gt;</td>
+            <td>p::after { content: " World"; }</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href="alltags.html#before" target="_blank">::before</a></td>
+            <td>Inserts content before the content of an element.</td>
+            <td>&lt;p&gt;Hello&lt;/p&gt;</td>
+            <td>p::before { content: "Hi! "; }</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href="alltags.html#first-letter" target="_blank">::first-letter</a></td>
+            <td>Styles the first letter of the first line of a block element.</td>
+            <td>&lt;p&gt;Hello world&lt;/p&gt;</td>
+            <td>p::first-letter { font-size: 2em; }</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a href="alltags.html#first-line" target="_blank">::first-line</a></td>
+            <td>Styles the first line of a block element.</td>
+            <td>&lt;p&gt;Hello world&lt;/p&gt;</td>
+            <td>p::first-line { color: red; }</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a href="alltags.html#placeholder" target="_blank">::placeholder</a></td>
+            <td>Styles placeholder text in an input or textarea.</td>
+            <td>&lt;input placeholder="Enter name"&gt;</td>
+            <td>input::placeholder { color: gray; }</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><a href="alltags.html#selection" target="_blank">::selection</a></td>
+            <td>Styles text selected by the user.</td>
+            <td>&lt;p&gt;Select this text&lt;/p&gt;</td>
+            <td>::selection { background: yellow; }</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><a href="alltags.html#marker" target="_blank">::marker</a></td>
+            <td>Styles the bullet or numbering of a list item.</td>
+            <td>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</td>
+            <td>li::marker { color: blue; }</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><a href="alltags.html#backdrop" target="_blank">::backdrop</a></td>
+            <td>Styles the backdrop of elements in full-screen mode.</td>
+            <td>&lt;video controls&gt;&lt;/video&gt;</td>
+            <td>::backdrop { background: rgba(0,0,0,0.8); }</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><a href="alltags.html#file-selector-button" target="_blank">::file-selector-button</a></td>
+            <td>Styles the button of an &lt;input type="file"&gt; element.</td>
+            <td>&lt;input type="file"&gt;</td>
+            <td>input::file-selector-button { background: green; }</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><a href="alltags.html#cue" target="_blank">::cue</a></td>
+            <td>Styles WebVTT captions and cues for media.</td>
+            <td>&lt;video&gt;&lt;/video&gt;</td>
+            <td>::cue { color: yellow; }</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td><a href="alltags.html#cue-region" target="_blank">::cue-region</a></td>
+            <td>Styles the entire area where WebVTT cues are displayed.</td>
+            <td>&lt;video&gt;&lt;/video&gt;</td>
+            <td>::cue-region { background: black; }</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td><a href="alltags.html#slotted" target="_blank">::slotted(selector)</a></td>
+            <td>Styles elements assigned to a slot in Shadow DOM.</td>
+            <td>&lt;slot&gt;&lt;/slot&gt;</td>
+            <td>::slotted(span) { color: red; }</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td><a href="alltags.html#part" target="_blank">::part(name)</a></td>
+            <td>Styles elements inside Shadow DOM that have a part attribute.</td>
+            <td>&lt;div part="button"&gt;Click&lt;/div&gt;</td>
+            <td>::part(button) { background: red; }</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td><a href="alltags.html#grammar-error" target="_blank">::grammar-error</a></td>
+            <td>Highlights grammar errors detected by the browser.</td>
+            <td>&lt;p&gt;He go to school&lt;/p&gt;</td>
+            <td>p::grammar-error { text-decoration: underline wavy green; }</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td><a href="alltags.html#spelling-error" target="_blank">::spelling-error</a></td>
+            <td>Highlights spelling errors detected by the browser.</td>
+            <td>&lt;p&gt;Helo world&lt;/p&gt;</td>
+            <td>p::spelling-error { text-decoration: underline wavy red; }</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><a href="alltags.html#target-text" target="_blank">::target-text</a></td>
+            <td>Styles the text target of a URL fragment.</td>
+            <td>&lt;p id="text"&gt;Target me&lt;/p&gt;</td>
+            <td>::target-text { background: yellow; }</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><a href="alltags.html#view-transition" target="_blank">::view-transition</a></td>
+            <td>Styles elements during a view transition animation.</td>
+            <td>&lt;div&gt;Page Content&lt;/div&gt;</td>
+            <td>::view-transition { opacity: 0.5; }</td>
+        </tr>
+    </table>
+</section>
+
+    </main>
+</body>
+</html>

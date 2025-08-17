@@ -1,0 +1,2161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties</title>
+    <style>
+         table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+  }
+ 
+  h1{
+    text-align: center;
+  }
+  tr:nth-child(even) {
+    background-color:lightgreen;
+    
+  }
+    </style>
+</head>
+<body>
+    <h1>CSS Properties</h1>
+    <table>
+        <tr>
+          <th>No.</th>
+          <th>Property</th>
+          <th>Description</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><a href="style.html#accent-color">accent-color</a></td>
+            <td>Defines the color of the accent</td>
+            <td>accent-color: red;</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href="style.html#align-content">align-content</a></td>
+            <td>Aligns the content inside the flex container</td>
+            <td>align-content: center;</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href="style.html#align-items">align-items</a></td>
+            <td>Aligns the items inside the flex container</td>
+            <td>align-items: center;</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a href="style.html#align-self">align-self</a></td>
+            <td>Aligns the item inside the flex container</td>
+            <td>align-self: center;</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a href="style.html#all">all</a></td>
+            <td>Applies styles to all elements</td>
+            <td>* { all: initial; }</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><a href="style.html#animation">animation</a></td>
+            <td>Applies an animation to an element</td>
+            <td>animation: name duration timing-function delay iteration-count direction fill-mode;</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><a href="style.html#animation-delay">animation-delay</a></td>
+            <td>Specifies when an animation should start</td>
+            <td>animation-delay: 2s;</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><a href="style.html#animation-direction">animation-direction</a></td>
+            <td>Specifies the direction of an animation</td>
+            <td>animation-direction: reverse;</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><a href="style.html#animation-duration">animation-duration</a></td>
+            <td>Specifies the length of time an animation takes to complete</td>
+            <td>animation-duration: 2s;</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><a href="style.html#animation-fill-mode">animation-fill-mode</a></td>
+            <td>Specifies how a CSS animation applies styles to its target before and after its execution</td>
+            <td>animation-fill-mode: forwards;</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td><a href="style.html#animation-iteration-count">animation-iteration-count</a></td>
+            <td>Specifies the number of times an animation should run</td>
+            <td>animation-iteration-count: infinite;</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td><a href="style.html#animation-name">animation-name</a></td>
+            <td>Specifies the name of the animation</td>
+            <td>animation-name: example;</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td><a href="style.html#animation-timing-function">animation-timing-function</a><a href="style.html#animation-play-state"></a></td>
+            <td>Specifies the speed curve of an animation</td>
+            <td>animation-timing-function: ease-in;</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td><a href="style.html#animation-timing-function1">animation-timing-function</a></td>
+            <td>Specifies the speed curve of an animation</td>
+            <td>animation-timing-function: ease-in;</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td><a href="style.html#aspect-ratio">aspect-ratio</a></td>
+            <td>Specifies the aspect ratio of an element</td>
+            <td>aspect-ratio: 16 / 9;</td>
+        </tr>
+        <tr>
+            <th colspan="4"><h2>B</h2></th>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><a href="style.html#backdrop-filter">backdrop-filter</a></td>
+            <td>Applies a filter to the background of an element</td>
+            <td>backdrop-filter: blur(10px);</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><a href="style.html#backface-visibility">backface-visibility</a></td>
+            <td>Specifies whether the back side of an element is visible</td>
+            <td>backface-visibility: hidden;</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><a href="style.html#background">background</a></td>
+            <td>Specifies the background color, image, or gradient of an element</td>
+            <td>background: url("image.jpg") no-repeat center center / cover;</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td><a href="style.html#background-attachment">background-attachment</a></td>
+            <td>Specifies whether a background image should scroll with the page or not</td>
+            <td>background-attachment: fixed;</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td><a href="style.html#background-clip">background-clip</a></td>
+            <td>Specifies how far an element's background extends beyond its border</td>
+            <td>background-clip: border-box;</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td><a href="style.html#background-color">background-color</a></td>
+            <td>Specifies the background color of an element</td>
+            <td>background-color: red;</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td><a href="style.html#background-image">background-image</a></td>
+            <td>Specifies one or more background images for an element</td>
+            <td>background-image: url("image.jpg");</td>
+        </tr>
+       
+        <tr>
+            <td>23</td>
+            <td><a href="style.html#background-origin">background-origin</a></td>
+            <td>Specifies the origin of a background image</td>
+            <td>background-origin: padding-box;</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td><a href="style.html#background-position">background-position</a></td>
+            <td>Specifies the position of a background image</td>
+            <td>background-position: center center;</td>
+        </tr>
+        <tr>
+             <td>25</td>
+            <td><a href="style.html#background-position-x">background-position-x</a></td>
+            <td>Specifies the horizontal position of a background image</td>
+            <td>background-position-x: center;</td>
+            
+        </tr>
+        <tr>
+            <td>26</td>
+            <td><a href="style.html#background-position-y">background-position-y</a></td>
+            <td>Specifies the vertical position of a background image</td>
+            <td>background-position-y: center;</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td><a href="style.html#background-repeat">background-repeat</a></td>
+            <td>Specifies whether a background image should repeat or not</td>
+            <td>background-repeat: no-repeat;</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td><a href="style.html#background-size">background-size</a></td>
+            <td>Specifies the size of a background image</td>
+            <td>background-size: cover;</td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td><a href="style.html#border">border</a><a href="style.html#block-size">block-size</a></td>
+            <td>Specifies the width, style, and color of an element's border</td>
+            <td>border: 2px solid red;</td>
+        </tr>
+        <tr>
+        <td>30</td>
+        <td><a href="style.html#border-block">border-block</a></td>
+        <td>Specifies the width, style, and color of an element's top and bottom borders</td>
+        <td>border-block: 2px solid red;</td>
+
+        </tr>
+        <tr>
+            <td>31</td>
+            <td><a href="style.html#border-block-color">border-block-color</a></td>
+            <td>Specifies the color of an element's top and bottom borders</td>
+            <td>border-block-color: red;</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td><a href="style.html#border-block-end">border-block-end</a></td>
+            <td>Specifies the width, style, and color of an element's bottom border</td>
+            <td>border-block-end: 2px solid red;</td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td><a href="style.html#border-block-end-color">border-block-end-color</a></td>
+            <td>Specifies the color of an element's bottom border</td>
+            <td>border-block-end-color: red;</td>
+        </tr>
+        <tr>
+            <td>34</td>
+            <td><a href="style.html#border-block-end-style">border-block-end-style</a></td>
+            <td>Specifies the style of an element's bottom border</td>
+            <td>border-block-end-style: solid;</td>
+        </tr>
+        <tr>
+           <td>35</td>
+           <td><a href="style.html#border-block-end-width">border-block-end-width</a></td>
+        
+           <td>Specifies the width of an element's bottom border</td>
+           <td>border-block-end-width: 2px;</td>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td><a href="style.html#border-block-start">border-block-start</a></td>
+            <td>Specifies the width, style, and color of an element's top border</td>
+            <td>border-block-start: 2px solid red;</td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td><a href="style.html#border-block-start-color">border-block-start-color</a></td>
+            <td>Specifies the color of an element's top border</td>
+            <td>border-block-start-color: red;</td>
+        </tr>
+        <tr>
+            <td>38</td>
+            <td><a href="style.html#border-block-start-style">border-block-start-style</a></td>
+            <td>Specifies the style of an element's top border</td>
+            <td>border-block-start-style: solid;</td>
+        </tr>
+        <tr>
+            <td>39</td>
+            <td><a href="style.html#border-block-start-width">border-block-start-width</a></td>
+            <td>Specifies the width of an element's top border</td>
+            <td>border-block-start-width: 2px;</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td><a href="style.html#border-block-style">border-block-style</a></td>
+            <td>Specifies the style of an element's top and bottom borders</td>
+            <td>border-block-style: solid;</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td><a href="style.html#border-block-width">border-block-width</a></td>
+            <td>Specifies the width of an element's top and bottom borders</td>
+            <td>border-block-width: 2px;</td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td><a href="style.html#border-bottom">border-bottom</a></td>
+            <td>Specifies the width, style, and color of an element's bottom border</td>
+            <td>border-bottom: 2px solid red;</td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td><a href="style.html#border-bottom-color">border-bottom-color</a></td>
+            <td>Specifies the color of an element's bottom border</td>
+            <td>border-bottom-color: red;</td>
+        </tr>
+
+        <tr>
+            <td>44</td>
+            <td><a href="style.html#border-bottom-left-radius">border-bottom-left-radius</a></td>
+            <td>Specifies the radius of the bottom-left corner of an element</td>
+            <td>border-bottom-left-radius: 5px;</td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td><a href="style.html#border-bottom-right-radius">border-bottom-right-radius</a></td>
+            <td>Specifies the radius of the bottom-right corner of an element</td>
+            <td>border-bottom-right-radius: 5px;</td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td><a href="style.html#border-bottom-style">border-bottom-style</a></td>
+            <td>Specifies the style of an element's bottom border</td>
+            <td>border-bottom-style: solid;</td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td><a href="style.html#border-bottom-width">border-bottom-width</a></td>
+            <td>Specifies the width of an element's bottom border</td>
+            <td>border-bottom-width: 2px;</td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td><a href="style.html#border-collapse">border-collapse</a></td>
+            <td>Specifies whether table borders should be collapsed into a single border</td>
+            <td>border-collapse: collapse;</td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td><a href="style.html#border-color">border-color</a></td>
+            <td>Specifies the color of an element's border</td>
+            <td>border-color: red;</td>
+              </tr>
+              <tr>
+                <td>50</td>
+                <td><a href="style.html#border-end-end-radius">border-end-end-radius</a></td>
+                <td>Specifies the radius of the bottom-right corner of an element</td>
+                <td>border-end-end-radius: 5px;</td>
+              </tr>
+              <tr>
+                <td>51</td>
+                <td><a href="style.html#border-end-start-radius">border-end-start-radius</a></td>
+                <td>Specifies the radius of the bottom-left corner of an element</td>
+                <td>border-end-start-radius: 5px;</td>
+              </tr>
+              <tr>
+                <td>52</td>
+                <td><a href="style.html#border-image">border-image</a></td>
+                <td>Specifies the image to use for an element's border</td>
+                <td>border-image: url("image.jpg") 30 round;</td>
+              </tr>
+              <tr>
+                <td>53</td>
+                <td><a href="style.html#border-image-outset">border-image-outset</a></td>
+                <td>Specifies the amount of space between the border image and the border box</td>
+                <td>border-image-outset: 2px;</td>
+              </tr>
+              <tr>
+                <td>54</td>
+                <td><a href="style.html#border-image-repeat">border-image-repeat</a></td>
+                <td>Specifies how to repeat the border image</td>
+                <td>border-image-repeat: repeat;</td>
+              </tr>
+              <tr>
+                <td>55</td>
+                <td><a href="style.html#border-image-slice">border-image-slice</a></td>
+                <td>Specifies how to slice the border image</td>
+                <td>border-image-slice: 1 2 3 4;</td>
+              </tr>
+              <tr>
+                <td>56</td>
+                <td><a href="style.html#border-image-source">border-image-source</a></td>
+                <td>Specifies the source of the border image</td>
+                <td>border-image-source: url("image.jpg");</td>
+              </tr>
+              <tr>
+                <td>57</td>
+                <td><a href="style.href#border-image-width">border-image-width</a></td>
+                <td>Specifies the width of the border image</td>
+                <td>border-image-width: 2px;</td>
+              </tr>
+              <tr>
+                <td>58</td>
+                <td><a href="style.html#border-inline">border-inline</a></td>
+                <td>Specifies the width, style, and color of an element's left and right borders</td>
+                <td>border-inline: 2px solid red;</td>
+              </tr>
+              <tr>
+                <td>59</td>
+                <td><a href="style.html#border-inline-color">border-inline-color</a></td>
+                <td>Specifies the color of an element's left and right borders</td>
+                <td>border-inline-color: red;</td>
+              </tr>
+              <tr>
+                <td>60</td>
+                <td><a href="style.html#border-inline-end">border-inline-end</a></td>
+                <td>Specifies the width, style, and color of an element's right border</td>
+                <td>border-inline-end: 2px solid red;</td>
+            </tr>
+            <tr>
+                <td>61</td>
+                <td><a href="style.html#border-inline-end-color">border-inline-end-color</a></td>
+                <td>Specifies the color of an element's right border</td>
+                <td>border-inline-end-color: red;</td>
+            </tr>
+             <tr>
+                <td>62</td>
+                <td><a href="style.html#border-inline-end-style">border-inline-end-style</a></td>
+                <td>Specifies the style of an element's right border</td>
+                <td>border-inline-end-style: solid;</td>    
+             </tr>
+             <tr>
+                <td>63</td>
+                <td><a href="style.html#border-inline-end-width">border-inline-end-width</a></td>
+                <td>Specifies the width of an element's right border</td>
+                <td>border-inline-end-width: 2px;</td>
+             </tr>
+             <tr>
+                <td>64</td>
+                <td><a href="style.html#border-inline-start">border-inline-start</a></td>
+                <td>Specifies the width, style, and color of an element's left border</td>
+                <td>border-inline-start: 2px solid red;</td>
+             </tr>
+             <tr>
+                <td>65</td>
+                <td><a href="style.html#border-inline-start-color">border-inline-start-color</a></td>
+                <td>Specifies the color of an element's left border</td>
+                <td>border-inline-start-color: red;</td>
+             </tr>
+             <tr>
+                <td>66</td>
+                <td><a href="style.html#border-inline-start-style">border-inline-start-style</a></td>
+                <td>Specifies the style of an element's left border</td>
+                <td>border-inline-start-style: solid;</td>
+             </tr>
+             <tr>
+                <td>67</td>
+                <td><a href="style.html#border-inline-start-width">border-inline-start-width</a></td>
+                <td>Specifies the width of an element's left border</td>
+                <td>border-inline-start-width: 2px;</td>
+             </tr>
+             <tr>
+                <td>68</td>
+                <td><a href="style.html#border-inline-style">border-inline-style</a></td>
+                <td>Specifies the style of an element's left and right borders</td>
+                <td>border-inline-style: solid;</td>
+             </tr>
+             <tr>
+                <td>69</td>
+                <td><a href="style.html#border-inline-width">border-inline-width</a></td>
+                <td>Specifies the width of an element's left and right borders</td>
+                <td>border-inline-width: 2px;</td>
+             </tr>
+             <tr>
+                <td>70</td>
+                <td><a href="style.html#border-left">border-left</a></td>
+                <td>Specifies the width, style, and color of an element's left border</td>
+                <td>border-left: 2px solid red;</td>
+             </tr>
+             <tr>
+                <td>71</td>
+                <td><a href="style.html#border-left-color">border-left-color</a></td>
+                <td>Specifies the color of an element's left border</td>
+                <td>border-left-color: red;</td>
+             </tr>
+             <tr>
+                <td>72</td>
+                <td><a href="style.html#border-left-style">border-left-style</a></td>
+                <td>Specifies the style of an element's left border</td>
+                <td>border-left-style: solid;</td>
+             </tr>
+             <tr>
+                <td>73</td>
+                <td><a href="style.html#border-left-width">border-left-width</a></td>
+                <td>Specifies the width of an element's left border</td>
+                <td>border-left-width: 2px;</td>
+             </tr>
+             <tr>
+                <td>74</td>
+                <td><a href="style.html#border-radius">border-radius</a></td>
+                <td>Specifies the radius of the border corner of an element</td>
+                <td>border-radius: 25px;</td>
+             </tr>
+             <tr>
+                <td>75</td>
+                <td><a href="style.html#border-right">border-right</a></td>
+                <td>Specifies the width, style, and color of an element's right border</td>
+                <td>border-right: 2px solid red;</td>
+             </tr>
+             <tr>
+                <td>76</td>
+                <td><a href="style.html#border-right-color">border-right-color</a></td>
+                <td>Specifies the color of an element's right border</td>
+                <td>border-right-color: red;</td>
+             </tr>
+             <tr>
+                <td>77</td>
+                <td><a href="style.html#border-right-style">border-right-style</a></td>
+                <td>Specifies the style of an element's right border</td>
+                <td>border-right-style: solid;</td>
+             </tr>
+             <tr>
+                <td>78</td>
+                <td><a href="style.html#border-right-width">border-right-width</a></td>
+                <td>Specifies the width of an element's right border</td>
+                <td>border-right-width: 2px;</td>
+             </tr>
+             <tr>
+                <td>79</td>
+                <td><a href="style.html#border-style">border-style</a></td>
+                <td>Specifies the style of an element's border</td>
+                <td>border-style: solid;</td>
+             </tr>
+             <tr>
+                <td>80</td>
+                <td><a href="style.html#border-start-end-radius">border-start-end-radius</a></td>
+                <td>Specifies the radius of the border corner of an element</td>
+                <td>border-start-end-radius: 25px;</td>
+             </tr>
+             <tr>
+                <td>81</td>
+                <td><a href="style.html#border-start-start-radius">border-start-start-radius</a></td>
+                <td>Specifies the radius of the border corner of an element</td>
+                <td>border-start-start-radius: 25px;</td>
+             </tr>
+             <tr>
+                <td>82</td>
+                <td><a href="style.html#border-style">border-style</a></td>
+                <td>Specifies the style of an element's border</td>
+                <td>border-style: solid;</td>
+                  </tr>
+             <tr>
+                <td>83</td>
+                <td><a href="style.html#border-top">border-top</a></td>
+                <td>Specifies the width, style, and color of an element's top border</td>
+                <td>border-top: 2px solid red;</td>
+             </tr>
+             <tr>
+                <td>84</td>
+                <td><a href="style.html#border-top-color">border-top-color</a></td>
+                <td>Specifies the color of an element's top border</td>
+                <td>border-top-color: red;</td>
+             </tr>
+             <tr>
+                <td>85</td>
+                <td><a href="style.html#border-top-left-radius">border-top-left-radius</a></td>
+                <td>Specifies the radius of the border corner of an element</td>
+                <td>border-top-left-radius: 25px;</td>
+             </tr>
+             <tr>
+                <td>86</td>
+                <td><a href="style.html#border-top-right-radius">border-top-right-radius</a></td>
+                <td>Specifies the radius of the border corner of an element</td>
+                <td>border-top-right-radius: 25px;</td>
+             </tr>
+             <tr>
+                <td>87</td>
+                <td><a href="style.html#border-top-style">border-top-style</a></td>
+                <td>Specifies the style of an element's top border</td>
+                <td>border-top-style: solid;</td>
+             </tr>
+             <tr>
+                <td>88</td>
+                <td><a href="style.html#border-top-width">border-top-width</a></td>
+                <td>Specifies the width of an element's top border</td>
+                <td>border-top-width: 2px;</td>
+             </tr>
+             <tr>
+                <td>89</td>
+                <td><a href="style.html#border-width">border-width</a></td>
+                <td>Specifies the width of an element's border</td>
+                <td>border-width: 2px;</td>
+             </tr>
+             <tr>
+                <td>90</td>
+                <td><a href="style.html#bottom">bottom</a></td>
+                <td>Specifies the distance between the bottom margin edge of an element and the bottom border edge</td>
+                <td>bottom: 2px;</td>
+             </tr>
+             <tr>
+                <td>91</td>
+                <td><a href="style.html#box-decoration-break">box-decoration-break</a></td>
+                <td>Specifies how an element's decorations are broken across lines</td>
+                <td>box-decoration-break: clone;</td>
+             </tr>
+             <tr>
+                <td>92</td>
+                <td><a href="style/html#box-reflect">box-reflect</a></td>
+                <td>Specifies the reflection of an element</td>
+                <td>box-reflect: right;</td>
+             </tr>
+             <tr>
+                <td>93</td>
+                <td><a href="style.html#box-shadow">box-shadow</a></td>
+                <td>Specifies the shadow effects of an element</td>
+                <td>box-shadow: 2px 2px 2px 2px red;</td>
+             </tr>
+             <tr>
+                <td>94</td>
+                <td><a href="style.html#box-sizing">box-sizing</a></td>
+                <td>Specifies the layout method used for an element</td>
+                <td>box-sizing: border-box;</td>
+             </tr>
+             <tr>
+                <td>95</td>
+                <td><a href="style.html#break-after">break-after</a></td>
+                <td>Specifies how a page, column, or region break should behave after a block-level box</td>
+                <td>break-after: avoid;</td>
+                </tr>
+                <tr>
+                <td>96</td>
+                <td><a href="style.html#break-before">break-before</a></td>
+                <td>Specifies how a page, column, or region break should behave before a block-level box</td>
+                <td>break-before: avoid;</td>
+                </tr>
+                <tr>
+                <td>97</td>
+                <td><a href="style.html#break-inside">break-inside</a></td>
+                <td>Specifies how a page, column, or region break should behave inside a block-level box</td>
+                <td>break-inside: avoid;</td>
+                </tr>
+                <tr>
+                    <th colspan="4"><h1>C</h1></th>
+                </tr>
+                <tr>
+                <td>98</td>
+                <td><a href="style.html#caption-side">caption-side</a></td>
+                <td>Specifies the position of a table caption</td>
+                <td>caption-side: bottom;</td>
+                </tr>
+                <tr>
+                <td>99</td>
+                <td><a href="style.html#caret-color">caret-color</a></td>
+                <td>Specifies the color of the cursor in an element</td>
+                <td>caret-color: red;</td>
+                </tr>
+                <tr>
+                <td>100</td>
+                <td><a href="style.html#charset">@charset</a></td>
+                <td>Specifies the character set used in an HTML document</td>
+                <td>@charset "UTF-8";</td>
+                </tr>
+                <tr>
+                <td>101</td>
+                <td><a href="style.html#clear">clear</a></td>
+                <td>Specifies which sides of an element are cleared</td>
+                <td>clear: both;</td>
+                </tr>
+                <tr>
+                <td>102</td>
+                <td><a href="style.html#clip">clip</a></td>
+                <td>Specifies the shape of an element</td>
+                <td>clip: circle(50% at 50% 50%);</td>
+                </tr>
+                <tr>
+                <td>103</td>
+                <td><a href="style.html#clip-path">clip-path</a></td>
+                <td>Specifies the shape of an element</td>
+                <td>clip-path: circle(50% at 50% 50%);</td>
+                </tr>
+                <tr>
+                <td>104</td>
+                <td><a href="style.html#color">color</a></td>
+                <td>Specifies the color of text</td>
+                <td>color: red;</td>
+                </tr>
+                <tr>
+                <td>105</td>
+                <td><a href="style.html#column-scheme">column-scheme</a></td>
+                <td>Specifies the layout of columns</td>
+                <td>column-scheme: normal;</td>
+        
+                </tr>
+                <tr>
+                <td>106</td>
+                <td><a href="style.html#column-count">column-count</a></td>
+                <td>Specifies the number of columns in a multi-column layout</td>
+                <td>column-count: 3;</td>
+                </tr>
+                <tr>
+                <td>107</td>
+                <td><a href="style.html#column-fill">column-fill</a></td>
+                <td>Specifies the filling of columns</td>
+                <td>column-fill: auto;</td>
+                </tr>
+                <tr>
+                <td>108</td>
+                <td><a href="style.html#column-gap">column-gap</a></td>
+                <td>Specifies the gap between columns</td>
+                <td>column-gap: 10px;</td>
+                </tr>
+                <tr>
+                <td>109</td>
+                <td><a href="style.html#column-rule">column-rule</a></td>
+                <td>Specifies the width, style, and color of a column rule</td>
+                <td>column-rule: 2px solid red;</td>
+                </tr>
+                <tr>
+                <td>110</td>
+                <td><a href="style.html#column-rule-color">column-rule-color</a></td>
+                <td>Specifies the color of a column rule</td>
+                <td>column-rule-color: red;</td>
+                </tr>
+                <tr>
+                <td>111</td>
+                <td><a href="style.html#column-rule-style">column-rule-style</a></td>
+                <td>Specifies the style of a column rule</td>
+                <td>column-rule-style: solid;</td>
+                </tr>
+                <tr>
+                <td>112</td>
+                <td><a href="style.html#column-rule-width">column-rule-width</a></td>
+                <td>Specifies the width of a column rule</td>
+                <td>column-rule-width: 2px;</td>
+                </tr>
+                <tr>
+                <td>113</td>
+                <td><a href="style.html#column-span">column-span</a></td>
+                <td>Specifies how many columns an element should span</td>
+                <td>column-span: all;</td>
+                </tr>
+                <tr>
+                <td>114</td>
+                <td><a href="style.html#column-width">column-width</a></td>
+                <td>Specifies the width of columns</td>
+                <td>column-width: 100px;</td>
+                </tr>
+                <tr>
+                <td>115</td>
+                <td><a href="style.html#columns">columns</a></td>
+                <td>Specifies the layout of columns</td>
+                <td>columns: 2;</td>
+                </tr>
+                <tr>
+                    <td>116</td>
+                    <td><a href="style.html#container">@container</a></td>
+                    <td>Specifies the layout of containers</td>
+                    <td>@container (min-width: 500px) { ... }</td>
+                </tr>
+                
+                <tr>
+                    <td>117</td>
+                    <td><a href="style.html#content">content</a></td>
+                    <td>Specifies the content of an element</td>
+                    <td>content: "Hello World";</td>
+                </tr>
+                <tr>
+                    <td>118</td>
+                    <td><a href="style.html#counter-increment">counter-increment</a></td>
+                    <td>Increments the value of a CSS counter</td>
+                    <td>counter-increment: section;</td>
+                </tr>
+                <tr>
+                    <td>119</td>
+                    <td><a href="style.html#counter-reset">counter-reset</a></td>
+                    <td>Resets the value of a CSS counter</td>
+                    <td>counter-reset: section 1;</td>
+                </tr>
+                <tr>
+                    <td>120</td>
+                    <td><a href="style.html#counter-set">counter-set</a></td>
+                    <td>Sets the value of a CSS counter</td>
+                    <td>counter-set: section 1;</td>
+                </tr>
+                <tr>
+                    <td>121</td>
+                    <td><a href="style.html#counter-style">@counter-style</a></td>
+                    <td>Specifies the layout of counters</td>
+                    <td>@counter-style section { ... }</td>
+                </tr>
+                <tr>
+                    <td>122</td>
+                    <td><a href="style.html#cursor">cursor</a></td>
+                    <td>Specifies the cursor to be used when the mouse pointer is over an element</td>
+                    <td>cursor: pointer;</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td><a href="style.html#contain">contain</a></td>
+                    <td>Specifies the layout of containers</td>
+                    <td>contain: content;</td>
+                </tr>
+                <tr>
+                    <th colspan="4"><h1>D</h1></th>
+                </tr>
+                <tr>
+                    <td>124</td>
+                    <td><a href="style.html#direction">direction</a></td>
+                    <td>Specifies the direction of text</td>
+                    <td>direction: rtl;</td>
+                </tr>
+                <tr>
+                    <td>125</td>
+                    <td><a href="style.html#display">display</a></td>
+                    <td>Specifies the display type of an element</td>
+                    <td>display: block;</td>
+                </tr>
+                <tr>
+                    <th colspan="4"><h1>E</h1></th>
+            
+                </tr>
+                <tr>
+                    <td>126</td>
+                    <td><a href="style.html#empty-cells">empty-cells</a></td>
+                    <td>Specifies how empty cells should be displayed</td>
+                    <td>empty-cells: hide;</td>
+                </tr>
+                <tr>
+                    <th colspan="4"><h1>F</h1></th>
+        
+                </tr>
+                <tr>
+                    <td>127</td>
+                    <td><a href="style.html#filter">filter</a></td>
+                    <td>Specifies a filter to be applied to an element</td>
+                    <td>filter: blur(10px);</td>
+                </tr>
+                <tr>
+                    <td>128</td>
+                    <td><a href="style.html#flex">flex</a></td>
+                    <td>Specifies the flex properties of an element</td>
+                    <td>flex: 1;</td>
+
+                </tr>
+                <tr>
+                    <td>129</td>
+                    <td><a href="style.html#flex-basis">flex-basis</a></td>
+                    <td>Specifies the initial main size of a flex item</td>
+                    <td>flex-basis: 200px;</td>
+                </tr>
+                <tr>
+                    <td>130</td>
+                    <td><a href="style.html#flex-direction">flex-direction</a></td>
+                    <td>Specifies the direction of the flex container</td>
+                    <td>flex-direction: row;</td>
+                </tr>
+                <tr>
+                    <td>131</td>
+                    <td><a href="style.html#flex-flow">flex-flow</a></td>
+                    <td>Specifies the flex direction and flex wrap</td>
+                    <td>flex-flow: row wrap;</td>
+                </tr>
+                <tr>
+                    <td>132</td>
+                    <td><a href="style.html#flex-grow">flex-grow</a></td>
+                    <td>Specifies the flex grow factor of a flex item</td>
+                    <td>flex-grow: 1;</td>
+                </tr>
+                <tr>
+                    <td>133</td>
+                    <td><a href="style.html#flex-shrink">flex-shrink</a></td>
+                    <td>Specifies the flex shrink factor of a flex item</td>
+                    <td>flex-shrink: 1;</td>
+                </tr>
+                <tr>
+                    <td>134</td>
+                    <td><a href="style.html#flex-wrap">flex-wrap</a></td>
+                    <td>Specifies whether flex items should wrap or not</td>
+                    <td>flex-wrap: wrap;</td>
+                </tr>
+                <tr>
+                    <td>135</td>
+                    <td><a href="style.html#float">float</a></td>
+                    <td>Specifies the float position of an element</td>
+                    <td>float: left;</td>
+                </tr>
+                <tr>
+                    <td>136</td>
+                    <td><a href="style.html#font">font</a></td>
+                    <td>Specifies the font properties of an element</td>
+                    <td>font: 16px Arial, sans-serif;</td>
+                </tr>
+                <tr>
+                    <td>137</td>
+                    <td><a href="style.html#font-face">@font-face</a></td>
+                    <td>Specifies the font properties of an element</td>
+                    <td>font: 16px Arial, sans-serif;</td>
+                </tr>
+                <tr>
+                    <td>138</td>
+                    <td><a href="style.html#font-family">font-family</a></td>
+                    <td>Specifies the font family of an element</td>
+                    <td>font-family: Arial, sans-serif;</td>
+                </tr>
+                <tr>
+                    <td>139</td>
+                    <td><a href="style.html#font-feature-settings">font-feature-settings</a></td>
+                    <td>Specifies the font feature settings of an element</td>
+                    <td>font-feature-settings: "liga" 1;</td>
+                </tr>
+                <tr>
+                    <td>140</td>
+                    <td><a href="style.html#font-kerning">font-kerning</a></td>
+                    <td>Specifies the font kerning of an element</td>
+                    <td>font-kerning: normal;</td>
+                </tr>
+                <tr>
+                    <td>141</td>
+                    <td><a href="style.html#font-language-override">font-language-override</a></td>
+                    <td>Specifies the font language override of an element</td>
+                    <td>font-language-override: normal;</td>
+                </tr>
+                <tr>
+                    <td>142</td>
+                    <td><a href="style.html#font-palette-values">font-palette-values</a></td>
+                    <td>Specifies the font palette values of an element</td>
+                    <td>font-palette-values: 1;</td>
+                </tr>
+                <tr>
+                    <td>143</td>
+                    <td><a href="style.html#font-size">font-size</a></td>
+                    <td>Specifies the font size of an element</td>
+                    <td>font-size: 16px;</td>
+                </tr>
+                <tr>
+                    <td>144</td>
+                    <td><a href="style.html#font-size-adjust">font-size-adjust</a></td>
+                    <td>Specifies the font size adjustment of an element</td>
+                    <td>font-size-adjust: none;</td>
+                </tr>
+                <tr>
+                    <td>145</td>
+                    <td><a href="style.html#font-stretch">font-stretch</a></td>
+                    <td>Specifies the font stretch of an element</td>
+                    <td>font-stretch: normal;</td>
+                </tr>
+        
+                <tr>
+                    <td>146</td>
+                    <td><a href="style.html#font-style">font-style</a></td>
+                    <td>Specifies the font style of an element</td>
+                    <td>font-style: italic;</td>
+                </tr>
+                <tr>
+                    <td>147</td>
+                    <td><a href="style.html#font-synthesis">font-synthesis</a></td>
+                    <td>Specifies the font synthesis of an element</td>   
+                    <td>font-synthesis: weight style;</td>
+                </tr>
+                <tr>
+                    <td>148</td>
+                    <td><a href="style.html#font-variant">font-variant</a></td>
+                    <td>Specifies the font variant of an element</td>
+                    <td>font-variant: normal;</td>
+                </tr>
+                <tr>
+                    <td>149</td>
+                    <td><a href="style.html#font-variant-alternates">font-variant-alternates</a></td>
+                    <td>Specifies the font variant alternates of an element</td>
+                    <td>font-variant-alternates: normal;</td>
+                </tr>
+                <tr>
+                    <td>150</td>
+                    <td><a href="style.html#font-variant-caps">font-variant-caps</a></td>
+                    <td>Specifies the font variant caps of an element</td>
+                    <td>font-variant-caps: normal;</td>
+                </tr>
+                <tr>
+                    <td>151</td>
+                    <td><a href="style.html#font-variant-east-asian">font-variant-east-asian</a></td>
+                    <td>Specifies the font variant east asian of an element</td>
+                    <td>font-variant-east-asian: normal;</td>
+                </tr>
+                <tr>
+                    <td>152</td>
+                    <td><a href="style.html#font-variant-ligatures">font-variant-ligatures</a></td>
+                    <td>Specifies the font variant ligatures of an element</td>
+                    <td>font-variant-ligatures: normal;</td>
+                </tr>
+                <tr>
+                    <td>153</td>
+                    <td><a href="style.html#font-variant-numeric">font-variant-numeric</a></td>
+                    <td>Specifies the font variant numeric of an element</td>
+                    <td>font-variant-numeric: normal;</td>
+                </tr>
+                <tr>
+                    <td>154</td>
+                    <td><a href="style.html#font-variant-position">font-variant-position</a></td>
+                    <td>Specifies the font variant position of an element</td>
+                    <td>font-variant-position: normal;</td>
+                </tr>
+                <tr>
+                    <td>155</td>
+                    <td><a href="style.html#font-weight">font-weight</a></td>
+                    <td>Specifies the font weight of an element</td>
+                    <td>font-weight: bold;</td>
+                </tr>
+<tr>
+    <th colspan="4"><h1>G</h1></th>
+</tr>
+<tr>
+    <td>156</td>
+    <td><a href="style.html#gap">gap</a></td>
+    <td>Specifies the gap between grid items</td>
+    <td>gap: 10px;</td>
+</tr>
+<tr>
+    <td>157</td>
+    <td><a href="style.html#grid">grid</a></td>
+    <td>Specifies the grid of an element</td>
+    <td>grid: auto / auto;</td>
+</tr>
+<tr>
+    <td>158</td>
+    <td><a href="style.html#grid-area">grid-area</a></td>
+    <td>Specifies the grid area of an element</td>
+    <td>grid-area: 1 / 2 / 3 / 4;</td>
+</tr>
+<tr>
+    <td>159</td>
+    <td><a href="style.html#grid-column">grid-column</a></td>
+    <td>Specifies the grid column of an element</td>
+    <td>grid-column: 1 / 3;</td>
+</tr>
+<tr>
+    <td>160</td>
+    <td><a href="style.html#grid-auto-columns">grid-auto-columns</a></td>
+    <td>Specifies the grid auto columns of an element</td>
+    <td>grid-auto-columns: 200px;</td>
+</tr>
+<tr>
+    <td>161</td>
+    <td><a href="style.html#grid-auto-flow">grid-auto-flow</a></td>
+    <td>Specifies the grid auto flow of an element</td>
+    <td>grid-auto-flow: row;</td>
+</tr>
+<tr>
+    <td>162</td>
+    <td><a href="style.html#grid-auto-rows">grid-auto-rows</a></td>
+    <td>Specifies the grid auto rows of an element</td>
+    <td>grid-auto-rows: 100px;</td>
+</tr>
+<tr>
+    <td>163</td>
+    <td><a href="style.html#grid-column-end">grid-column-end</a></td>
+    <td>Specifies the grid column end of an element</td>
+    <td>grid-column-end: 3;</td>
+</tr>
+<tr>
+    <td>164</td>
+    <td><a href="style.html#grid-column-start">grid-column-start</a></td>
+    <td>Specifies the grid column start of an element</td>
+    <td>grid-column-start: 1;</td>
+</tr>
+<tr>
+    <td>165</td>
+    <td><a href="style.html#grid-row">grid-row</a></td>
+    <td>Specifies the grid row of an element</td>
+    <td>grid-row: 2 / 4;</td>
+</tr>
+<tr>
+    <td>166</td>
+    <td><a href="style.html#grid-row-end">grid-row-end</a></td>
+    <td>Specifies the grid row end of an element</td>
+    <td>grid-row-end: 4;</td>
+</tr>
+<tr>
+    <td>167</td>
+    <td><a href="style.html#grid-row-start">grid-row-start</a></td>
+    <td>Specifies the grid row start of an element</td>
+    <td>grid-row-start: 2;</td>
+</tr>
+<tr>
+    <td>168</td>
+    <td><a href="style.html#grid-template">grid-template</a></td>
+    <td>Specifies the grid template of an element</td>
+    <td>grid-template: 100px 200px / 1fr 2fr;</td>
+</tr>
+<tr>
+    <td>169</td>
+    <td><a href="style.html#grid-template-areas">grid-template-areas</a></td>
+    <td>Specifies the grid template areas of an element</td>
+    <td>grid-template-areas: "header header" "sidebar main";</td>
+</tr>
+<tr>
+    <td>170</td>
+    <td><a href="style.html#grid-template-columns">grid-template-columns</a></td>
+    <td>Specifies the grid template columns of an element</td>
+    <td>grid-template-columns: 200px 1fr;</td>
+</tr>
+<tr>
+    <td>171</td>
+    <td><a href="style.html#grid-template-rows">grid-template-rows</a></td>
+    <td>Specifies the grid template rows of an element</td>
+    <td>grid-template-rows: 100px auto;</td>
+</tr>
+<tr>
+    <td>172</td>
+    <td><a href="style.html#grid-column-gap">grid-column-gap</a></td>
+    <td>Specifies the grid column gap of an element</td>
+    <td>grid-column-gap: 20px;</td>
+</tr>
+<tr>
+    <td>173</td>
+    <td><a href="style.html#grid-row-gap">grid-row-gap</a></td>
+    <td>Specifies the grid row gap of an element</td>
+    <td>grid-row-gap: 15px;</td>
+</tr>
+<tr>
+    <td>174</td>
+    <td><a href="style.html#grid-gap">grid-gap</a></td>
+    <td>Specifies the grid gap of an element</td>
+    <td>grid-gap: 10px 20px;</td>
+</tr>
+
+<tr>
+    <th colspan="4"><h1>H</h1></th>
+</tr>
+<tr>
+    <td>175</td>
+    <td><a href="style.html#hanging-punctuation">hanging-punctuation</a></td>
+    <td>Specifies the hanging punctuation of an element</td>
+    <td>hanging-punctuation: first;</td>
+</tr>
+<tr>
+    <td>176</td>
+    <td><a href="style.html#height">height</a></td>
+    <td>Specifies the height of an element</td>
+    <td>height: 200px;</td>
+</tr>
+<tr>
+    <td>177</td>
+    <td><a href="style.html#hyphens">hyphens</a></td>
+    <td>Specifies the hyphens of an element</td>
+    <td>hyphens: auto;</td>
+</tr>
+<tr>
+    <td>178</td>
+    <td><a href="style.html#hyphenate-character">hyphenate-character</a></td>
+    <td>Specifies the hyphenate character of an element</td>
+    <td>hyphenate-character: "-";</td>
+</tr>
+
+<tr>
+    <th colspan="4"><h1>I</h1></th>
+</tr>
+<tr>
+    <td>179</td>
+    <td><a href="style.html#image-rendering">image-rendering</a></td>
+    <td>Specifies the image rendering of an element</td>
+    <td>image-rendering: crisp-edges;</td>
+</tr>
+<tr>
+    <td>180</td>
+    <td><a href="style.html#import">@import</a></td>
+    <td>Specifies the import of an element</td>
+    <td>@import url("style.css");</td>
+</tr>
+<tr>
+    <td>181</td>
+    <td><a href="style.html#initial-letter">initial-letter</a></td>
+    <td>Specifies the initial letter of an element</td>
+    <td>initial-letter: 2 3;</td>
+</tr>
+<tr>
+    <td>182</td>
+    <td><a href="style.html#initial-size">initial-size</a></td>
+    <td>Specifies the initial size of an element</td>
+    <td>initial-size: 12px;</td>
+</tr>
+<tr>
+    <td>183</td>
+    <td><a href="style.html#inset">inset</a></td>
+    <td>Specifies the inset of an element</td>
+    <td>inset: 10px 20px 30px 40px;</td>
+</tr>
+<tr>
+    <td>184</td>
+    <td><a href="style.html#inset-block">inset-block</a></td>
+    <td>Specifies the inset block of an element</td>
+    <td>inset-block: 10px;</td>
+</tr>
+<tr>
+    <td>185</td>
+    <td><a href="style.html#inset-block-end">inset-block-end</a></td>
+    <td>Specifies the inset block end of an element</td>
+    <td>inset-block-end: 20px;</td>
+</tr>
+<tr>
+    <td>186</td>
+    <td><a href="style.html#inset-block-start">inset-block-start</a></td>
+    <td>Specifies the inset block start of an element</td>
+    <td>inset-block-start: 5px;</td>
+</tr>
+<tr>
+    <td>187</td>
+    <td><a href="style.html#inset-inline">inset-inline</a></td>
+    <td>Specifies the inset inline of an element</td>
+    <td>inset-inline: 15px;</td>
+</tr>
+<tr>
+    <td>188</td>
+    <td><a href="style.html#inset-inline-end">inset-inline-end</a></td>
+    <td>Specifies the inset inline end of an element</td>
+    <td>inset-inline-end: 25px;</td>
+</tr>
+<tr>
+    <td>189</td>
+    <td><a href="style.html#inset-inline-start">inset-inline-start</a></td>
+    <td>Specifies the inset inline start of an element</td>
+    <td>inset-inline-start: 8px;</td>
+</tr>
+<tr>
+    <td>190</td>
+    <td><a href="style.html#isolation">isolation</a></td>
+    <td>Specifies the isolation of an element</td>
+    <td>isolation: isolate;</td>
+</tr>
+
+<tr>
+    <th colspan="4"><h1>J</h1></th>
+</tr>
+<tr>
+    <td>191</td>
+    <td><a href="style.html#justify-content">justify-content</a></td>
+    <td>Specifies the justify content of an element</td>
+    <td>justify-content: center;</td>
+</tr>
+<tr>
+    <td>192</td>
+    <td><a href="style.html#justify-items">justify-items</a></td>
+    <td>Specifies the justify items of an element</td>
+    <td>justify-items: stretch;</td>
+</tr>
+<tr>
+    <td>193</td>
+    <td><a href="style.html#justify-self">justify-self</a></td>
+    <td>Specifies the justify self of an element</td>
+    <td>justify-self: end;</td>
+</tr>
+
+<tr>
+    <th colspan="4"><h1>K</h1></th>
+</tr>
+<tr>
+    <td>194</td>
+    <td><a href="style.html#keyframes">@keyframes</a></td>
+    <td>Specifies the keyframes of an element</td>
+    <td>@keyframes slide { from { left: 0; } to { left: 100px; } }</td>
+</tr>
+
+<tr>
+    <th colspan="4"><h1>L</h1></th>
+</tr>
+<tr>
+    <td>195</td>
+    <td><a href="style.html#layer">@layer</a></td>
+    <td>Specifies the layer of an element</td>
+    <td>@layer base;</td>
+</tr>
+<tr>
+    <td>196</td>
+    <td><a href="style.html#left">left</a></td>
+    <td>Specifies the left of an element</td>
+    <td>left: 50px;</td>
+</tr>
+<tr>
+    <td>197</td>
+    <td><a href="style.html#letter-spacing">letter-spacing</a></td>
+    <td>Specifies the letter spacing of an element</td>
+    <td>letter-spacing: 2px;</td>
+</tr>
+<tr>
+    <td>198</td>
+    <td><a href="style.html#line-break">line-break</a></td>
+    <td>Specifies the line break of an element</td>
+    <td>line-break: strict;</td>
+</tr>
+<tr>
+    <td>199</td>
+    <td><a href="style.html#line-height">line-height</a></td>
+    <td>Specifies the line height of an element</td>
+    <td>line-height: 1.5;</td>
+</tr>
+<tr>
+    <td>200</td>
+    <td><a href="style.html#list-style">list-style</a></td>
+    <td>Specifies the list style of an element</td>
+    <td>list-style: square inside;</td>
+</tr>
+<tr>
+    <td>201</td>
+    <td><a href="style.html#list-style-image">list-style-image</a></td>
+    <td>Specifies the list style image of an element</td>
+    <td>list-style-image: url('icon.png');</td>
+</tr>
+<tr>
+    <td>202</td>
+    <td><a href="style.html#list-style-position">list-style-position</a></td>
+    <td>Specifies the list style position of an element</td>
+    <td>list-style-position: inside;</td>
+</tr>
+<tr>
+    <td>203</td>
+    <td><a href="style.html#list-style-type">list-style-type</a></td>
+    <td>Specifies the list style type of an element</td>
+    <td>list-style-type: decimal;</td>
+</tr>
+<tr><th colspan="4"><h1>M</h1></th></tr>
+<tr><td>204</td><td><a href="style.css#margin" target="_blank">margin</a></td><td>Sets all margins</td><td>margin: 10px;</td></tr>
+    <tr><td>205</td><td><a href="style.css#margin-block" target="_blank">margin-block</a></td><td>Sets block start and end margins</td><td>margin-block: 10px;</td></tr>
+    <tr><td>206</td><td><a href="style.css#margin-block-end" target="_blank">margin-block-end</a></td><td>Sets block end margin</td><td>margin-block-end: 10px;</td></tr>
+    <tr><td>207</td><td><a href="style.css#margin-block-start" target="_blank">margin-block-start</a></td><td>Sets block start margin</td><td>margin-block-start: 10px;</td></tr>
+    <tr><td>208</td><td><a href="style.css#margin-bottom" target="_blank">margin-bottom</a></td><td>Sets bottom margin</td><td>margin-bottom: 10px;</td></tr>
+    <tr><td>209</td><td><a href="style.css#margin-inline" target="_blank">margin-inline</a></td><td>Sets inline start and end margins</td><td>margin-inline: 10px;</td></tr>
+    <tr><td>210</td><td><a href="style.css#margin-inline-end" target="_blank">margin-inline-end</a></td><td>Sets inline end margin</td><td>margin-inline-end: 10px;</td></tr>
+    <tr><td>211</td><td><a href="style.css#margin-inline-start" target="_blank">margin-inline-start</a></td><td>Sets inline start margin</td><td>margin-inline-start: 10px;</td></tr>
+    <tr><td>212</td><td><a href="style.css#margin-left" target="_blank">margin-left</a></td><td>Sets left margin</td><td>margin-left: 10px;</td></tr>
+    <tr><td>213</td><td><a href="style.css#margin-right" target="_blank">margin-right</a></td><td>Sets right margin</td><td>margin-right: 10px;</td></tr>
+    <tr><td>214</td><td><a href="style.css#margin-top" target="_blank">margin-top</a></td><td>Sets top margin</td><td>margin-top: 10px;</td></tr>
+    <tr><td>215</td><td><a href="style.css#marker" target="_blank">marker</a></td><td>Sets the marker image for lists or SVG</td><td>marker: url(icon.png);</td></tr>
+    <tr><td>216</td><td><a href="style.css#marker-end" target="_blank">marker-end</a></td><td>Sets the marker at the end of a path</td><td>marker-end: url(icon.png);</td></tr>
+    <tr><td>217</td><td><a href="style.css#marker-mid" target="_blank">marker-mid</a></td><td>Sets the marker in the middle of a path</td><td>marker-mid: url(icon.png);</td></tr>
+    <tr><td>218</td><td><a href="style.css#marker-start" target="_blank">marker-start</a></td><td>Sets the marker at the start of a path</td><td>marker-start: url(icon.png);</td></tr>
+    <tr><td>219</td><td><a href="style.css#mask" target="_blank">mask</a></td><td>Defines a mask layer</td><td>mask: url(mask.png) no-repeat center;</td></tr>
+    <tr><td>220</td><td><a href="style.css#mask-clip" target="_blank">mask-clip</a></td><td>Specifies the mask clipping area</td><td>mask-clip: border-box;</td></tr>
+    <tr><td>221</td><td><a href="style.css#mask-composite" target="_blank">mask-composite</a></td><td>Specifies mask compositing method</td><td>mask-composite: add;</td></tr>
+    <tr><td>222</td><td><a href="style.css#mask-image" target="_blank">mask-image</a></td><td>Sets mask image</td><td>mask-image: url(mask.png);</td></tr>
+    <tr><td>223</td><td><a href="style.css#mask-mode" target="_blank">mask-mode</a></td><td>Specifies how mask image is used</td><td>mask-mode: luminance;</td></tr>
+    <tr><td>224</td><td><a href="style.css#mask-origin" target="_blank">mask-origin</a></td><td>Specifies mask origin box</td><td>mask-origin: content-box;</td></tr>
+    <tr><td>225</td><td><a href="style.css#mask-position" target="_blank">mask-position</a></td><td>Sets mask position</td><td>mask-position: center;</td></tr>
+    <tr><td>226</td><td><a href="style.css#mask-repeat" target="_blank">mask-repeat</a></td><td>Specifies how mask image repeats</td><td>mask-repeat: no-repeat;</td></tr>
+    <tr><td>227</td><td><a href="style.css#mask-size" target="_blank">mask-size</a></td><td>Sets mask image size</td><td>mask-size: cover;</td></tr>
+    <tr><td>228</td><td><a href="style.css#mask-type" target="_blank">mask-type</a></td><td>Specifies mask type</td><td>mask-type: alpha;</td></tr>
+    <tr><td>229</td><td><a href="style.css#max-height" target="_blank">max-height</a></td><td>Sets maximum height</td><td>max-height: 200px;</td></tr>
+    <tr><td>230</td><td><a href="style.css#max-width" target="_blank">max-width</a></td><td>Sets maximum width</td><td>max-width: 100%;</td></tr>
+    <tr><td>231</td><td><a href="style.css#media" target="_blank">media</a></td><td>Defines media query rules</td><td>@media screen and (max-width: 600px) { body { font-size: 14px; } }</td></tr>
+    <tr><td>232</td><td><a href="style.css#max-block-size" target="_blank">max-block-size</a></td><td>Sets maximum block size</td><td>max-block-size: 200px;</td></tr>
+    <tr><td>233</td><td><a href="style.css#max-inline-size" target="_blank">max-inline-size</a></td><td>Sets maximum inline size</td><td>max-inline-size: 300px;</td></tr>
+    <tr><td>234</td><td><a href="style.css#min-block-size" target="_blank">min-block-size</a></td><td>Sets minimum block size</td><td>min-block-size: 100px;</td></tr>
+    <tr><td>235</td><td><a href="style.css#min-inline-size" target="_blank">min-inline-size</a></td><td>Sets minimum inline size</td><td>min-inline-size: 150px;</td></tr>
+    <tr><td>236</td><td><a href="style.css#min-height" target="_blank">min-height</a></td><td>Sets minimum height</td><td>min-height: 200px;</td></tr>
+    <tr><td>237</td><td><a href="style.css#min-width" target="_blank">min-width</a></td><td>Sets minimum width</td><td>min-width: 300px;</td></tr>
+    <tr><td>238</td><td><a href="style.css#mix-blend-mode" target="_blank">mix-blend-mode</a></td><td>Sets blending mode for element</td><td>mix-blend-mode: multiply;</td></tr>
+   
+  <tr><th colspan="4"><h1>N</h1></th></tr>
+     <tr><td>239</td><td><a href="style.css#namespace" target="_blank">@namespace</a></td><td>Declares XML namespace</td><td>@namespace svg url("http://www.w3.org/2000/svg");</td></tr>
+
+    <tr><th colspan="4"><h1>O</h1></th></tr>
+    <tr>
+        <td>240</td>
+        <td><a href="style.html#object-fit">object-fit</a></td>
+        <td>Sets object-fit property</td>
+        <td>object-fit: contain;</td>
+    </tr>
+    <tr>
+        <td>241</td>
+        <td><a href="style.html#object-position">object-position</a></td>
+        <td>Sets object-position property</td>
+        <td>object-position: center;</td>
+    </tr>
+    <tr>
+        <td>242</td>
+        <td><a href="style.html#offset">offset</a></td>
+        <td>Sets offset property</td>
+        <td>offset: 10px;</td>
+    </tr>
+    <tr>
+        <td>243</td>
+        <td><a href="style.html#offset-anchor">offset-anchor</a></td>
+        <td>Sets offset-anchor property</td>
+        <td>offset-anchor: center;</td>
+    </tr>
+    <tr>
+        <td>244</td>
+        <td><a href="style.html#offset-distance">offset-distance</a></td>
+        <td>Sets offset-distance property</td>
+        <td>offset-distance: 10px;</td>
+    </tr>
+    <tr>
+        <td>245</td>
+        <td><a href="style.html#offset-path">offset-path</a></td>
+        <td>Sets offset-path property</td>
+        <td>offset-path: path("M0 0 L100 100");</td>
+    </tr>
+    <tr>
+        <td>246</td>
+        <td><a href="style.html#offset-position">offset-position</a></td>
+        <td>Sets offset-position property</td>
+        <td>offset-position: center;</td>
+    </tr>
+    <tr>
+        <td>247</td>
+        <td><a href="style.html#offset-rotate">offset-rotate</a></td>
+        <td>Sets offset-rotate property</td>
+        <td>offset-rotate: 45deg;</td>
+    </tr>
+    <tr>
+        <td>248</td>
+        <td><a href="style.html#opacity">opacity</a></td>
+        <td>Sets opacity property</td>
+        <td>opacity: 0.5;</td>
+    </tr>
+    <tr>
+        <td>249</td>
+        <td><a href="style.html#order">order</a></td>
+        <td>Sets order property</td>
+        <td>order: 1;</td>
+    </tr>
+    <tr>
+        <td>250</td>
+        <td><a href="style.html#orphans">orphans</a></td>
+        <td>Sets orphans property</td>
+        <td>orphans: 2;</td>
+    </tr>
+    <tr>
+        <td>251</td>
+        <td><a href="style.html#outline">outline</a></td>
+        <td>Sets outline property</td>
+        <td>outline: 2px solid red;</td>
+    </tr>
+    <tr>
+        <td>252</td>
+        <td><a href="style.html#outline-color">outline-color</a></td>
+        <td>Sets outline-color property</td>
+        <td>outline-color: red;</td>
+    </tr>
+    <tr>
+        <td>253</td>
+        <td><a href="style.html#outline-offset">outline-offset</a></td>
+        <td>Sets outline-offset property</td>
+        <td>outline-offset: 10px;</td>
+    </tr>
+    <tr>
+        <td>254</td>
+        <td><a href="style.html#outline-style">outline-style</a></td>
+        <td>Sets outline-style property</td>
+        <td>outline-style: solid;</td>
+    </tr>
+    <tr>
+        <td>255</td>
+        <td><a href="style.html#outline-width">outline-width</a></td>
+        <td>Sets outline-width property</td>
+        <td>outline-width: 2px;</td>
+    </tr>
+    <tr>
+        <td>256</td>
+        <td><a href="style.html#overflow">overflow</a></td>
+        <td>Sets overflow property</td>
+        <td>overflow: hidden;</td>
+    </tr>
+    <tr>
+        <td>257</td>
+        <td><a href="style.html#overflow-anchor">overflow-anchor</a></td>
+        <td>Sets overflow-anchor property</td>
+        <td>overflow-anchor: auto;</td>
+    </tr>
+    <tr>
+        <td>258</td>
+        <td><a href="style.html#overflow-wrap">overflow-wrap</a></td>
+        <td>Sets overflow-wrap property</td>
+        <td>overflow-wrap: break-word;</td>
+    </tr>
+    <tr>
+        <td>259</td>
+        <td><a href="style.html#overflow-x">overflow-x</a></td>
+        <td>Sets overflow-x property</td>
+        <td>overflow-x: hidden;</td>
+    </tr>
+    <tr>
+        <td>260</td>
+        <td><a href="style.html#overflow-y">overflow-y</a></td>
+        <td>Sets overflow-y property</td>
+        <td>overflow-y: hidden;</td>
+    </tr>
+    <tr>
+        <td>261</td>
+        <td><a href="style.html#overscroll-behavior-block">overscroll-behavior-block</a></td>
+        <td>Sets overscroll-behavior-block property</td>
+        <td>overscroll-behavior-block: contain;</td>
+    </tr>
+    <tr>
+        <td>262</td>
+        <td><a href="style.html#overscroll-behavior-inline">overscroll-behavior-inline</a></td>
+        <td>Sets overscroll-behavior-inline property</td>
+        <td>overscroll-behavior-inline: contain;</td>
+    </tr>
+    <tr>
+        <td>263</td>
+        <td><a href="style.html#overscroll-behavior-x">overscroll-behavior-x</a></td>
+        <td>Sets overscroll-behavior-x property</td>
+        <td>overscroll-behavior-x: contain;</td>
+    </tr>
+    <tr>
+        <td>264</td>
+        <td><a href="style.html#overscroll-behavior-y">overscroll-behavior-y</a></td>
+        <td>Sets overscroll-behavior-y property</td>
+        <td>overscroll-behavior-y: contain;</td>
+    </tr>
+
+    <tr><th colspan="4"><h1>P</h1></th></tr>
+
+    <tr>
+        <td>265</td>
+        <td><a href="style.html#padding">padding</a></td>
+        <td>Sets padding property</td>
+        <td>padding: 10px;</td>
+    </tr>
+    <tr>
+        <td>266</td>
+        <td><a href="style.html#padding-block">padding-block</a></td>
+        <td>Sets padding-block property</td>
+        <td>padding-block: 10px;</td>
+    </tr>
+    <tr>
+        <td>267</td>
+        <td><a href="style.html#padding-block-end">padding-block-end</a></td>
+        <td>Sets padding-block-end property</td>
+        <td>padding-block-end: 10px;</td>
+    </tr>
+    <tr>
+        <td>268</td>
+        <td><a href="style.html#padding-block-start">padding-block-start</a></td>
+        <td>Sets padding-block-start property</td>
+        <td>padding-block-start: 10px;</td>
+    </tr>
+    <tr>
+        <td>269</td>
+        <td><a href="style.html#padding-bottom">padding-bottom</a></td>
+        <td>Sets padding-bottom property</td>
+        <td>padding-bottom: 10px;</td>
+    </tr>
+    <tr>
+        <td>270</td>
+        <td><a href="style.html#padding-inline">padding-inline</a></td>
+        <td>Sets padding-inline property</td>
+        <td>padding-inline: 10px;</td>
+    </tr>
+    <tr>
+        <td>271</td>
+        <td><a href="style.html#padding-inline-end">padding-inline-end</a></td>
+        <td>Sets padding-inline-end property</td>
+        <td>padding-inline-end: 10px;</td>
+    </tr>
+    <tr>
+        <td>272</td>
+        <td><a href="style.html#padding-inline-start">padding-inline-start</a></td>
+        <td>Sets padding-inline-start property</td>
+        <td>padding-inline-start: 10px;</td>
+    </tr>
+    <tr>
+        <td>273</td>
+        <td><a href="style.html#padding-left">padding-left</a></td>
+        <td>Sets padding-left property</td>
+        <td>padding-left: 10px;</td>
+    </tr>
+    <tr>
+        <td>274</td>
+        <td><a href="style.html#padding-right">padding-right</a></td>
+        <td>Sets padding-right property</td>
+        <td>padding-right: 10px;</td>
+    </tr>
+    <tr>
+        <td>275</td>
+        <td><a href="style.html#padding-top">padding-top</a></td>
+        <td>Sets padding-top property</td>
+        <td>padding-top: 10px;</td>
+    </tr>
+    <tr>
+        <td>276</td>
+        <td><a href="style.html#page">@page</a></td>
+        <td>Sets page property</td>
+        <td>@page { margin: 10px; }</td>
+    </tr>
+    <tr>
+        <td>277</td>
+        <td><a href="style.html#page-break-after">page-break-after</a></td>
+        <td>Sets page-break-after property</td>
+        <td>page-break-after: avoid;</td>
+    </tr>
+    <tr>
+        <td>278</td>
+        <td><a href="style.html#page-break-before">page-break-before</a></td>
+        <td>Sets page-break-before property</td>
+        <td>page-break-before: avoid;</td>
+    </tr>
+    <tr>
+        <td>279</td>
+        <td><a href="style.html#page-break-inside">page-break-inside</a></td>
+        <td>Sets page-break-inside property</td>
+        <td>page-break-inside: avoid;</td>
+    </tr>
+    <tr>
+        <td>280</td>
+        <td><a href="style.html#paint-order">paint-order</a></td>
+        <td>Sets paint-order property</td>
+        <td>paint-order: normal;</td>
+    </tr>
+    <tr>
+        <td>281</td>
+        <td><a href="style.html#perspective">perspective</a></td>
+        <td>Sets perspective property</td>
+        <td>perspective: 10px;</td>
+    </tr>
+    <tr>
+        <td>282</td>
+        <td><a href="style.html#perspective-origin">perspective-origin</a></td>
+        <td>Sets perspective-origin property</td>
+        <td>perspective-origin: 10px;</td>
+    </tr>
+    <tr>
+        <td>283</td>
+        <td><a href="style.html#place-content">place-content</a></td>
+        <td>Sets place-content property</td>
+        <td>place-content: center;</td>
+    </tr>
+    <tr>
+        <td>284</td>
+        <td><a href="style.html#place-items">place-items</a></td>
+        <td>Sets place-items property</td>
+        <td>place-items: center;</td>
+    </tr>
+    <tr>
+        <td>285</td>
+        <td><a href="style.html#place-self">place-self</a></td>
+        <td>Sets place-self property</td>
+        <td>place-self: center;</td>
+    </tr>
+    <tr>
+        <td>286</td>
+        <td><a href="style.html#pointer-events">pointer-events</a></td>
+        <td>Sets pointer-events property</td>
+        <td>pointer-events: none;</td>
+    </tr>
+    <tr>
+        <td>287</td>
+        <td><a href="style.html#position">position</a></td>
+        <td>Sets position property</td>
+        <td>position: static;</td>
+    </tr>
+    <tr>
+        <td>288</td>
+        <td><a href="style.html#property">@property</a></td>
+        <td>Sets property property</td>
+        <td>@property --color { syntax: '<color>'; inherits: false; initial-value: red; }</td>
+        </tr>
+
+        <tr><th colspan="4"><h1>Q</h1></th></tr>
+        <tr>
+            <td>289</td>
+            <td><a href="style.html#quotes">quotes</a></td>
+            <td>Sets quotes property</td>
+            <td>quotes: none;</td>
+        </tr>
+        <tr><th colspan="4"><h1>R</h1></th></tr>
+        <tr>
+            <td>290</td>
+            <td><a href="style.html#resize">resize</a></td>
+            <td>Sets resize property</td>
+            <td>resize: none;</td>
+        </tr>
+        <tr>
+            <td>291</td>
+            <td><a href="style.html#right">right</a></td>
+            <td>Sets right property</td>
+            <td>right: 10px;</td>
+        </tr>
+        <tr>
+            <td>292</td>
+            <td><a href="style.html#rotate">rotate</a></td>
+            <td>Sets rotate property</td>
+            <td>rotate: 10px;</td>
+        </tr>
+        <tr>
+            <td>293</td>
+            <td><a href="style.html#row-gap">row-gap</a></td>
+            <td>Sets row-gap property</td>
+            <td>row-gap: 10px;</td>
+            </tr>
+            <tr><th colspan="4"><h1>S</h1></th></tr>
+            <tr>
+                <td>294</td>
+                <td><a href="style.html#scale">scale</a></td>
+                <td>Sets scale property</td>
+                <td>scale: 10px;</td>
+                </tr>
+                <tr>
+                    <td>295</td>
+                    <td><a href="style.html#scope">@scope</a></td>
+                    <td>Sets scope property</td>
+                    <td>@scope --color { syntax: '<color>'; inherits: false; initial-value: red; }</td>
+                    </tr>
+                <tr>
+                    <td>296</td>
+                    <td><a href="style.html#scroll-behavior">scroll-behavior</a></td>
+                    <td>Sets scroll-behavior property</td>
+                    <td>scroll-behavior: smooth;</td>
+                    </tr>
+                    <tr>
+                        <td>297</td>
+                        <td><a href="style.html#scroll-margin">scroll-margin</a></td>
+                        <td>Sets scroll-margin property</td>
+                        <td>scroll-margin: 10px;</td>
+            </tr>
+    <tr>
+        <td>298</td>
+        <td><a href="style.html#scroll-margin-block">scroll-margin-block</a></td>
+        <td>Sets scroll-margin-block property</td>
+        <td>scroll-margin-block: 10px;</td>
+    </tr>
+    <tr>
+        <td>299</td>
+        <td><a href="style.html#scroll-margin-block-end">scroll-margin-block-end</a></td>
+        <td>Sets scroll-margin-block-end property</td>
+        <td>scroll-margin-block-end: 10px;</td>
+    </tr>
+    <tr>
+        <td>300</td>
+        <td><a href="style.html#scroll-margin-block-start">scroll-margin-block-start</a></td>
+        <td>Sets scroll-margin-block-start property</td>
+        <td>scroll-margin-block-start: 10px;</td>
+    </tr>
+    <tr>
+        <td>301</td>
+        <td><a href="style.html#scroll-margin-bottom">scroll-margin-bottom</a></td>
+        <td>Sets scroll-margin-bottom property</td>
+        <td>scroll-margin-bottom: 10px;</td>
+    </tr>
+    <tr>
+        <td>302</td>
+        <td><a href="style.html#scroll-margin-inline">scroll-margin-inline</a></td>
+        <td>Sets scroll-margin-inline property</td>
+        <td>scroll-margin-inline: 10px;</td>
+    </tr>
+    <tr>
+        <td>303</td>
+        <td><a href="style.html#scroll-margin-inline-end">scroll-margin-inline-end</a></td>
+        <td>Sets scroll-margin-inline-end property</td>
+        <td>scroll-margin-inline-end: 10px;</td>
+    </tr>
+    <tr>    
+        <td>304</td>
+        <td><a href="style.html#scroll-margin-inline-start">scroll-margin-inline-start</a></td>
+        <td>Sets scroll-margin-inline-start property</td>
+        <td>scroll-margin-inline-start: 10px;</td>
+    </tr>
+    <tr>
+        <td>305</td>
+        <td><a href="style.html#scroll-margin-left">scroll-margin-left</a></td>
+        <td>Sets scroll-margin-left property</td>
+        <td>scroll-margin-left: 10px;</td>
+    </tr>
+    <tr>
+        <td>306</td>
+        <td><a href="style.html#scroll-margin-right">scroll-margin-right</a></td>
+        <td>Sets scroll-margin-right property</td>
+        <td>scroll-margin-right: 10px;</td>
+    </tr>
+    <tr>
+        <td>307</td>
+        <td><a href="style.html#scroll-margin-top">scroll-margin-top</a></td>
+        <td>Sets scroll-margin-top property</td>
+        <td>scroll-margin-top: 10px;</td>
+    </tr>
+    <tr>
+        <td>308</td>
+        <td><a href="style.html#scroll-padding">scroll-padding</a></td>
+        <td>Sets scroll-padding property</td>
+        <td>scroll-padding: 10px;</td>
+    </tr>
+    <tr>
+        <td>309</td>
+        <td><a href="style.html#scroll-padding-block">scroll-padding-block</a></td>
+        <td>Sets scroll-padding-block property</td>
+        <td>scroll-padding-block: 10px;</td>
+    </tr>
+    <tr>
+        <td>310</td>
+        <td><a href="style.html#scroll-padding-block-end">scroll-padding-block-end</a></td>
+        <td>Sets scroll-padding-block-end property</td>
+        <td>scroll-padding-block-end: 10px;</td>
+    </tr>
+    <tr>
+        <td>311</td>
+        <td><a href="style.html#scroll-padding-block-start">scroll-padding-block-start</a></td>
+        <td>Sets scroll-padding-block-start property</td>
+        <td>scroll-padding-block-start: 10px;</td>
+    </tr>
+    <tr>
+        <td>312</td>
+        <td><a href="style.html#scroll-padding-bottom">scroll-padding-bottom</a></td>
+        <td>Sets scroll-padding-bottom property</td>
+        <td>scroll-padding-bottom: 10px;</td>
+    </tr>
+    <tr>
+        <td>313</td>
+        <td><a href="style.html#scroll-padding-inline">scroll-padding-inline</a></td>
+        <td>Sets scroll-padding-inline property</td>        
+        <td>scroll-padding-inline: 10px;</td>
+    </tr>
+    <tr>
+        <td>314</td>
+        <td><a href="style.html#scroll-padding-inline-end">scroll-padding-inline-end</a></td>
+        <td>Sets scroll-padding-inline-end property</td>
+        <td>scroll-padding-inline-end: 10px;</td>
+    </tr>
+    <tr>
+        <td>315</td>
+        <td><a href="style.html#scroll-padding-inline-start">scroll-padding-inline-start</a></td>
+        <td>Sets scroll-padding-inline-start property</td>
+        <td>scroll-padding-inline-start: 10px;</td>
+    </tr>
+    <tr>
+    <td>316</td>
+        <td><a href="style.html#scroll-padding-left">scroll-padding-left</a></td>
+        <td>Sets scroll-padding-left property</td>
+        <td>scroll-padding-left: 10px;</td>
+    </tr>
+    <tr>
+        <td>317</td>
+        <td><a href="style.html#scroll-padding-right">scroll-padding-right</a></td>
+        <td>Sets scroll-padding-right property</td>
+        <td>scroll-padding-right: 10px;</td>
+    </tr>
+    <tr>
+        <td>318</td>
+        <td><a href="style.html#scroll-padding-top">scroll-padding-top</a></td>
+        <td>Sets scroll-padding-top property</td>
+        <td>scroll-padding-top: 10px;</td>
+    </tr>
+    <tr>
+        <td>319</td>
+        <td><a href="style.html#scroll-snap-align">scroll-snap-align</a></td>
+        <td>Sets scroll-snap-align property</td>
+        <td>scroll-snap-align: start;</td>
+    </tr>
+    <tr>
+        <td>320</td>
+        <td><a href="style.html#scroll-snap-stop">scroll-snap-stop</a></td>
+        <td>Sets scroll-snap-stop property</td>
+        <td>scroll-snap-stop: always;</td>
+    </tr>
+    <tr>
+        <td>321</td>
+        <td><a href="style.html#scroll-snap-type">scroll-snap-type</a></td>
+        <td>Sets scroll-snap-type property</td>
+        <td>scroll-snap-type: y mandatory;</td>
+    </tr>
+
+    <tr>
+        <td>322</td>
+        <td><a href="style.html#scrollbar-color">scrollbar-color</a></td>
+        <td>Sets scrollbar-color property</td>
+        <td>scrollbar-color: red blue;</td>
+    </tr>
+    <tr>
+        <td>323</td>
+        <td><a href="style.html#shape-outside">shape-outside</a></td>
+        <td>Sets shape-outside property</td>
+        <td>shape-outside: circle();</td>
+    </tr>
+    <tr>
+        <td>324</td>
+        <td><a href="style.html#starting-style">@starting-style</a></td>
+        <td>Sets starting-style property</td>
+        <td>@starting-style --color { syntax: '<color>'; inherits: false; initial-value: red; }</td>
+    </tr>
+    <tr>
+        <td>325</td>
+        <td><a href="style.html#supports">@supports</a></td>
+        <td>Sets supports property</td>
+        <td>@supports (display: grid) { }</td>
+    </tr>
+    
+<tr><th colspan="4"><h1>T</h1></th></tr>
+
+<tr>
+    <td>326</td>
+    <td><a href="style.html#tab-size">tab-size</a></td>
+    <td>Sets tab-size property</td>
+    <td>tab-size: 4;</td>
+</tr>
+<tr>
+    <td>327</td>
+    <td><a href="style.html#table-layout">table-layout</a></td>
+    <td>Sets table-layout property</td>
+    <td>table-layout: fixed;</td>
+</tr>
+<tr>
+    <td>328</td>
+    <td><a href="style.html#text-align">text-align</a></td>
+    <td>Sets text-align property</td>
+    <td>text-align: center;</td>
+</tr>
+<tr>
+    <td>329</td>
+    <td><a href="style.html#text-align-last">text-align-last</a></td>
+    <td>Sets text-align-last property</td>
+    <td>text-align-last: center;</td>
+</tr>
+<tr>
+    <td>330</td>
+    <td><a href="style.html#text-combine-upright">text-combine-upright</a></td>
+    <td>Sets text-combine-upright property</td>
+    <td>text-combine-upright: all;</td>
+</tr>
+<tr>
+    <td>331</td>
+    <td><a href="style.html#text-decoration">text-decoration</a></td>
+    <td>Sets text-decoration property</td>
+    <td>text-decoration: underline;</td>
+</tr>
+<tr>
+    <td>332</td>
+    <td><a href="style.html#text-decoration-color">text-decoration-color</a></td>
+    <td>Sets text-decoration-color property</td>
+    <td>text-decoration-color: red;</td>
+</tr>
+<tr>
+    <td>333</td>
+    <td><a href="style.html#text-decoration-line">text-decoration-line</a></td>
+    <td>Sets text-decoration-line property</td>
+    <td>text-decoration-line: underline;</td>
+</tr>
+<tr>
+    <td>334</td>
+    <td><a href="style.html#text-decoration-style">text-decoration-style</a></td>
+    <td>Sets text-decoration-style property</td>
+    <td>text-decoration-style: wavy;</td>
+</tr>
+<tr>
+    <td>335</td>
+    <td><a href="style.html#text-decoration-thickness">text-decoration-thickness</a></td>
+    <td>Sets text-decoration-thickness property</td>
+    <td>text-decoration-thickness: 2px;</td>
+</tr>
+
+<tr>
+    <td>336</td>
+    <td><a href="style.html#text-emphasis">text-emphasis</a></td>
+    <td>Sets text-emphasis property</td>
+    <td>text-emphasis: filled;</td>
+</tr>
+<tr>
+    <td>337</td>
+    <td><a href="style.html#text-emphasis-color">text-emphasis-color</a></td>
+    <td>Sets text-emphasis-color property</td>
+    <td>text-emphasis-color: red;</td>
+</tr>
+<tr>
+    <td>338</td>
+    <td><a href="style.html#text-emphasis-position">text-emphasis-position</a></td>
+    <td>Sets text-emphasis-position property</td>
+    <td>text-emphasis-position: over right;</td>
+</tr>
+<tr>
+    <td>339</td>
+    <td><a href="style.html#text-emphasis-style">text-emphasis-style</a></td>
+    <td>Sets text-emphasis-style property</td>
+    <td>text-emphasis-style: filled;</td>
+</tr>
+<tr>
+    <td>340</td>
+    <td><a href="style.html#text-indent">text-indent</a></td>
+    <td>Sets text-indent property</td>
+    <td>text-indent: 2em;</td>
+</tr>
+<tr>
+    <td>341</td>
+    <td><a href="style.html#text-justify">text-justify</a></td>
+    <td>Sets text-justify property</td>
+    <td>text-justify: inter-word;</td>
+</tr>
+<tr>
+    <td>342</td>
+    <td><a href="style.html#text-orientation">text-orientation</a></td>
+    <td>Sets text-orientation property</td>
+    <td>text-orientation: sideways;</td>
+</tr>
+<tr>
+    <td>343</td>
+    <td><a href="style.html#text-overflow">text-overflow</a></td>
+    <td>Sets text-overflow property</td>
+    <td>text-overflow: ellipsis;</td>
+</tr>
+<tr>
+    <td>344</td>
+    <td><a href="style.html#text-shadow">text-shadow</a></td>
+    <td>Sets text-shadow property</td>
+    <td>text-shadow: 2px 2px 2px red;</td>
+</tr>
+<tr>
+    <td>345</td>
+    <td><a href="style.html#text-transform">text-transform</a></td>
+    <td>Sets text-transform property</td>
+    <td>text-transform: uppercase;</td>
+</tr>
+<tr>
+    <td>346</td>
+    <td><a href="style.html#text-underline-offset">text-underline-offset</a></td>
+    <td>Sets text-underline-offset property</td>
+    <td>text-underline-offset: 2px;</td>
+</tr>
+<tr>
+    <td>347</td>
+    <td><a href="style.html#text-underline-position">text-underline-position</a></td>
+    <td>Sets text-underline-position property</td>
+    <td>text-underline-position: under;</td>
+</tr>
+<tr>
+    <td>348</td>
+    <td><a href="style.html#top">top</a></td>
+    <td>Sets top property</td>
+    <td>top: 10px;</td>
+</tr>
+<tr>
+    <td>349</td>
+    <td><a href="style.html#transform">transform</a></td>
+    <td>Sets transform property</td>
+    <td>transform: rotate(45deg);</td>
+</tr>
+<tr>
+    <td>350</td>
+    <td><a href="style.html#transform-origin">transform-origin</a></td>
+    <td>Sets transform-origin property</td>
+    <td>transform-origin: top left;</td>
+</tr>
+<tr>
+    <td>351</td>
+    <td><a href="style.html#transform-style">transform-style</a></td>
+    <td>Sets transform-style property</td>
+    <td>transform-style: preserve-3d;</td>
+</tr>
+<tr>
+    <td>352</td>
+    <td><a href="style.html#transition">transition</a></td>
+    <td>Sets transition property</td>
+    <td>transition: background-color 0.5s ease-in-out;</td>
+</tr>
+<tr>
+    <td>353</td>
+    <td><a href="style.html#transition-delay">transition-delay</a></td>
+    <td>Sets transition-delay property</td>
+    <td>transition-delay: 0.5s;</td>
+</tr>
+<tr>
+    <td>354</td>
+    <td><a href="style.html#transition-duration">transition-duration</a></td>
+    <td>Sets transition-duration property</td>
+    <td>transition-duration: 0.5s;</td>
+</tr>
+<tr>
+    <td>355</td>
+    <td><a href="style.html#transition-property">transition-property</a></td>
+    <td>Sets transition-property property</td>
+    <td>transition-property: background-color;</td>
+</tr>
+<tr>
+    <td>356</td>
+    <td><a href="style.html#transition-timing-function">transition-timing-function</a></td>
+    <td>Sets transition-timing-function property</td>
+    <td>transition-timing-function: ease-in-out;</td>
+</tr>
+<tr>
+    <td>357</td>
+    <td><a href="style.html#translate">translate</a></td>
+    <td>Sets translate property</td>
+    <td>translate: 10px 20px;</td>
+</tr>
+<tr><th colspan="4"><h1>U</h1></th></tr>
+<tr>
+    <td>358</td>
+    <td><a href="style.html#unicode-bidi">unicode-bidi</a></td>
+    <td>Sets unicode-bidi property</td>
+    <td>unicode-bidi: bidi-override;</td>
+</tr>
+<tr>
+    <td>359</td>
+    <td><a href="style.html#user-select">user-select</a></td>
+    <td>Sets user-select property</td>
+    <td>user-select: none;</td>
+</tr>
+<tr><th colspan="4"><h1>V</h1></th></tr>
+<tr>
+    <td>360</td>
+    <td><a href="style.html#vertical-align">vertical-align</a></td>
+    <td>Sets vertical-align property</td>
+    <td>vertical-align: middle;</td>
+</tr>
+<tr>
+    <td>361</td>
+    <td><a href="style.html#visibility">visibility</a></td>
+    <td>Sets visibility property</td>
+    <td>visibility: hidden;</td>
+</tr>
+<tr><th colspan="4"><h1>W</h1></th></tr>
+<tr>
+    <td>362</td>
+    <td><a href="style.html#white-space">white-space</a></td>
+    <td>Sets white-space property</td>
+    <td>white-space: nowrap;</td>
+</tr>
+<tr>
+    <td>363</td>
+    <td><a href="style.html#windows">windows</a></td>
+    <td>Sets windows property</td>
+    <td>windows: auto;</td>
+</tr>
+<tr>
+    <td>364</td>
+    <td><a href="style.html#width">width</a></td>
+    <td>Sets width property</td>
+    <td>width: 100px;</td>
+</tr>
+<tr>
+    <td>365</td>
+    <td><a href="style.html#word-break">word-break</a></td>
+    <td>Sets word-break property</td>
+    <td>word-break: break-all;</td>
+</tr>
+<tr>
+    <td>366</td>
+    <td><a href="style.html#word-spacing">word-spacing</a></td>
+    <td>Sets word-spacing property</td>
+    <td>word-spacing: 5px;</td>
+</tr>
+<tr>
+    <td>367</td>
+    <td><a href="style.html#word-wrap">word-wrap</a></td>
+    <td>Sets word-wrap property</td>
+    <td>word-wrap: break-word;</td>
+</tr>
+<tr>
+    <td>368</td>
+    <td><a href="style.html#writing-mode">writing-mode</a></td>
+    <td>Sets writing-mode property</td>
+    <td>writing-mode: vertical-rl;</td>
+</tr>
+<tr><th colspan="4"><h1>X</h1>
+<h1>NO Tags</h1></th></tr>
+
+<tr><th colspan="4"><h1>Y</h1>
+<h1>NO Tags</h1></th></tr>
+<tr><th colspan="4"><h1>Z</h1></th></tr>
+<tr>
+    <td>369</td>
+    <td><a href="style.html#z-index">z-index</a></td>
+    <td>Sets z-index property</td>
+    <td>z-index: 1;</td>
+</tr>
+
+<tr>
+    <td>370</td>
+    <td><a href="style.html#zoom">zoom</a></td>
+    <td>Sets zoom property</td>
+    <td>zoom: 1.2;</td>
+</tr>
+
+</table>
+</body>
+</html>

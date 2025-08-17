@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .html_reference{
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .box{
+            border: 1px solid black;
+            padding: 1rem;
+            text-align: center;
+            background-color: lightcoral;
+            margin: 10px;
+        }
+         .box:hover{
+            border: 1px solid white;
+            padding: 1rem;
+            text-align: center;
+            background-color:black;
+        }
+        header h1{
+            text-align: center;
+            animation: box 10s infinite alternate;
+        }
+        .para{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .box a{
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            
+        }
+ @keyframes box {
+            0%{
+                color: black;
+            }
+            25%{
+                color:red;
+            }
+            50%{
+                color: yellow;
+            }
+            75%{
+                color: green;
+            }
+            100%{
+                color:aqua;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS REFERENCES</h1>
+        
+    </header>
+    <main>
+        <section>
+            <p class="para">At <b>SLA</b> Schools you will find complete references about HTML elements, attributes, events, color names, entities, character-sets, URL encoding, language codes, HTTP messages, browser support, and more:
+
+</p>
+        </section>
+        <section>
+            <div class="html_reference">
+                <div class="box"><a href="selector.html" target="_blank" title="click here">Selectors</a></div>
+                 <div class="box"><a href="css_property.html" target="_blank" title="click here">CSS Properties</a></div>
+                <div class="box"><a href="pseudo_classes.html" target="_blank" title="click here">Pseudo-classes</a></div>
+                <div class="box"><a href="pseudo_elements.html" target="_blank" title="click here">Pseudo-Elements</a></div>
+               
+            </div>
+        </section>
+    </main>
+</body>
+</html>
